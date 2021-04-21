@@ -14,6 +14,7 @@ export 🥧, 🍰, ㅠ
 export 🧑🏻➡️🧑🏽, 🪵, 🗜️
 
 using LinearAlgebra
+using EmojiSymbols
 # import Base: view
 
 ## Base
