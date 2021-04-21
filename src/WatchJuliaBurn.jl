@@ -3,6 +3,7 @@ module WatchJuliaBurn
 export c╯°□°ↄ╯, 🗺, 📖
 export ✅, 👍, 👌, 👎
 export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
+export ㅠ
 
 ## Base
 const c╯°□°ↄ╯ = throw
@@ -23,5 +24,8 @@ const ➡️😹 = hcat
 const 🐈 = cat
 const ⬇️🐈 = vcat
 const ➡️🐈 = hcat
+
+## Math
+const ㅠ = π
 
 end
