@@ -9,7 +9,7 @@ export 🔥
 export ⬛
 export 🕵️
 export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
-export 🔢, 🧺, 🪓🪓
+export 🔢, 🧺
 export 🥧, 🍰, ㅠ
 export 🧑🏻➡️🧑🏽, 🗜️
 
@@ -46,8 +46,8 @@ const ➡️🐈 = hcat
 const 🔢 = Matrix
 const 🧺 = collect
 if VERSION >= v"1.2"
-    @eval :(export $(Char(0x0001fa93))$(Char(0x0001fa93)))
-    @eval :(const $(Char(0x0001fa93))$(Char(0x0001fa93)) = axes) # axe-axe emoji
+    @eval :(export $(Symbol(Char(0x0001fa93) * Char(0x0001fa93))))
+    @eval :(const $(Symbol(Char(0x0001fa93) * Char(0x0001fa93))) = axes) # axe-axe emoji
 end
 # const 🪟 = view️
 
@@ -57,8 +57,8 @@ const 🍰 = π
 const ㅠ = π
 const 🧑🏻➡️🧑🏽 = tan
 if VERSION >= v"1.5"
-    @eval :(export $(Char(0x0001fab5)))
-    @eval :(const $(Char(0x0001fab5)) = log) # Wood emoji
+    @eval :(export $(Symbol(Char(0x0001fab5))))
+    @eval :(const $(Symbol(Char(0x0001fab5))) = log) # Wood emoji
 end
 const 🗜️ = clamp
 
