@@ -1,10 +1,9 @@
 module WatchJuliaBurn
 
-export c╯°□°ↄ╯, 🗺, 📖
+export c╯°□°ↄ╯, 🗺, 📖, 🛑
 export ✅, 👍, 👌, 👎
 export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
 export 🥧, 🍰, ㅠ
-export @🥩_str
 
 ## Base
 const c╯°□°ↄ╯ = throw
@@ -14,7 +13,7 @@ const ✅ = true
 const 👍 = true
 const 👌 = true
 const 👎 = false
-@eval $(Symbol("@🥩_str")) = $(getfield(Main, Symbol("@raw_str")))
+conts 🛑 = exit
 
 ## Arrays
 const 😻 = cat
