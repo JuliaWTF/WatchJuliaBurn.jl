@@ -13,6 +13,16 @@ const ✅ = true
 const 👍 = true
 const 👌 = true
 const 👎 = false
+const 🔥 = delete!
+const 🖨️ = print
+const 📡 = broadcast
+const ⚠ = warn
+const 🪓 = split
+const ⬛  = nothing
+const 🔎 = findfirst
+const 🔍 = findlast
+const 🕵️ = findall
+const ☝️ = show
 
 ## Arrays
 const 😻 = cat
@@ -24,27 +34,18 @@ const ➡️😹 = hcat
 const 🐈 = cat
 const ⬇️🐈 = vcat
 const ➡️🐈 = hcat
+const 🔢 = Matrix
+const 🧺 = collect
+const 🪓🪓 = axes
+const 🪟 = view️
 
 ## Math
 const 🥧 = π
 const 🍰 = π
 const ㅠ = π
-
-const 🔥 = delete!
-const 🖨️ = print
-const 📡 = broadcast
 const 🧑🏻➡️🧑🏽 = tan
-const 🔢 = Matrix
-const ⚠ = warn
-const 🧺 = collect
-const 🪓 = split
-const ⬛  = nothing
-const 🔎 = findfirst
-const 🔍 = findlast
-const 🕵️ = findall
-const 🪓🪓 = axes
-const 🪟 = view️
-const ☝️ = show
+
+
 
 
 end
