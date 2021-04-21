@@ -40,5 +40,5 @@ Don't hesitates to add your worst creations via PR.
 | --- | --- | --- |
 | 🥧, 🍰, ㅠ | `π` | |
 | 🧑🏻➡️🧑🏽 | `tan` | |
-| 🪵 | `log` | |
+| 🪵 | `log` | 1.5 |
 | 🗜️ | `clamp` | |

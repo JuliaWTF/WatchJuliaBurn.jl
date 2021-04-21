@@ -11,11 +11,10 @@ export 🕵️
 export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
 export 🔢, 🧺, 🪓🪓
 export 🥧, 🍰, ㅠ
-export 🧑🏻➡️🧑🏽, 🪵, 🗜️
+export 🧑🏻➡️🧑🏽, 🗜️
 
 using LinearAlgebra
 using EmojiSymbols
-# import Base: view
 
 ## Base
 const c╯°□°ↄ╯ = throw
@@ -46,8 +45,9 @@ const ⬇️🐈 = vcat
 const ➡️🐈 = hcat
 const 🔢 = Matrix
 const 🧺 = collect
-if VERSION > v"1.1"
-    const 🪓🪓 = axes
+if VERSION >= v"1.2"
+    @eval :(export $(Char(0x0001fa93))$(Char(0x0001fa93)))
+    @eval :(const $(Char(0x0001fa93))$(Char(0x0001fa93)) = axes) # Wood emoji
 end
 # const 🪟 = view️
 
@@ -56,8 +56,9 @@ const 🥧 = π
 const 🍰 = π
 const ㅠ = π
 const 🧑🏻➡️🧑🏽 = tan
-if VERSION > v"1.2"
-    const 🪵 = log
+if VERSION >= v"1.5"
+    @eval :(export $(Char(0x0001fab5)))
+    @eval :(const $(Char(0x0001fab5)) = log) # Wood emoji
 end
 const 🗜️ = clamp
 
