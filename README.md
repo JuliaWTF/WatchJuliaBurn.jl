@@ -14,3 +14,4 @@ Don't hesitates to add yours via PR.
 | ⬇️😻, ⬇️😹, ⬇️🐈 | `vcat` |
 | ➡️😻, ➡️😹, ➡️🐈 | `hcat` |
 | 🥧, 🍰, ㅠ | `π` |
+| 🥩`"string"` | `raw"string"` |
