@@ -32,7 +32,7 @@ using LinearAlgebra
     @test 🐈([1], [2]; dims=1) == [1, 2]
     @test ⬇️🐈([1], [2]) == [1, 2]
     @test ➡️🐈([1], [2]) == [1 2]
-    @test 🔢(diagm([1, 1])) == [1 0; 0 1] 
+    @test 🔢([1 0; 0 1]) == [1 0; 0 1] 
     @test 🧺(1:3) == [1, 2, 3]
     if VERSION >= v"1.2"
         @eval @test_nowarn $(Symbol(Char(0x0001fa93) * Char(0x0001fa93)))(rand(3, 3)) # 🪓🪓 
