@@ -50,7 +50,7 @@ const 🔢 = Matrix
 const 🧺 = collect
 if VERSION >= v"1.2"
     @eval export $(Symbol(Char(0x0001fa93) * Char(0x0001fa93)))
-    @eval const $(Symbol(Char(0x0001fa93) * Char(0x0001fa93))) = axes # axe-axe emoji
+    @eval const $(Symbol(Char(0x0001fa93) * Char(0x0001fa93))) = axes # 🪓🪓 
 end
 # const 🪟 = view️
 
@@ -61,7 +61,7 @@ const ㅠ = π
 const 🧑🏻➡️🧑🏽 = tan
 if VERSION >= v"1.5"
     @eval export $(Symbol(Char(0x0001fab5)))
-    @eval const $(Symbol(Char(0x0001fab5))) = log # Wood emoji
+    @eval const $(Symbol(Char(0x0001fab5))) = log # 🪵
 end
 const 🗜️ = clamp
 
