@@ -1,0 +1,13 @@
+name = "WatchJuliaBurn"
+uuid = "952999c0-2bc0-44cb-b633-dc1e299b187b"
+authors = ["Theo Galy-Fajou <theo.galyfajou@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
