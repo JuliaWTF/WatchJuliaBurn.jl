@@ -1,7 +1,7 @@
 # WatchJuliaBurn
 
-WatchJuliaBurn aims at destroying the look of your code by adding emojis like :smile: and kaomojis like c╯°□°ↄ╯ as equivalents from classical Julia functions.
-Don't hesitates to add yours via PR.
+WatchJuliaBurn aims at destroying the look of your code by adding emojis like :smile: and kaomojis like c╯°□°ↄ╯ instead of your favorites Julia functions.
+Don't hesitates to add your worst creations via PR.
 
 ## List of emojis
 
