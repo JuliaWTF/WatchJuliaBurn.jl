@@ -14,4 +14,18 @@ Don't hesitates to add yours via PR.
 | ⬇️😻, ⬇️😹, ⬇️🐈 | `vcat` |
 | ➡️😻, ➡️😹, ➡️🐈 | `hcat` |
 | 🥧, 🍰, ㅠ | `π` |
+| 💬🚨 | `ArgumentError`|
+| 🚪🚶 | `join` |
+| 🗂 ,📁 | `foldr` |
+| 🥇 | `first` |
+| 🔎🥇 | `findfirst`|
+| 🔑 ,🗝 | `keys`|
+| 🎰 | `rand` |
+| ⚰️ | `kill`| 
+| 🏃 | `run` | 
+| 🚰 | `fill`| 
+| 🛵🔧 | `mod` | 
+| ↔ | `inv` |
+|🔮 | `imag` |
+| 🎠 , 🔵 | `round` |
 | 🥩`"string"` | `raw"string"` |
