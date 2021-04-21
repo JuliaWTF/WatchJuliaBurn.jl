@@ -19,7 +19,7 @@ Don't hesitates to add your worst creations via PR.
 | ⬛  | `nothing` | |
 | 🕵️ | `findall` | |
 | ☝️ | `show` | |
-| ⛰️ | `peek` | |
+| ⛰️ | `peek` | 1.5 |
 | 🥩`"string"` | `raw"string"` | |
 
 ### Arrays and LinearAlgebra
@@ -32,7 +32,6 @@ Don't hesitates to add your worst creations via PR.
 | 🔢 | `Matrix` | |
 | 🧺 | `collect` | |
 | 🪓🪓 | `axes` | 1.2 |
-| 🪟 | `view️` | |
 
 ### Maths
 

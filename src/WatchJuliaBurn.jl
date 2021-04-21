@@ -4,7 +4,7 @@ export c╯°□°ↄ╯
 export 🗺, 📖, 📡
 export ✅, 👍, 👌, 👎
 export @🥩_str
-export 🖨️, ☝️, ⛰️
+export 🖨️, ☝️
 export 🔥
 export ⬛
 export 🕵️
@@ -31,7 +31,10 @@ const 🖨️ = print
 const ⬛  = nothing
 const 🕵️ = findall
 const ☝️ = show
-const ⛰️ = peek
+if VERSION >= v"1.5"
+    export ⛰️ 
+    const ⛰️ = peek
+end
 
 ## Arrays
 const 😻 = cat

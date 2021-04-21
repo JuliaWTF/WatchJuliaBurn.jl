@@ -18,7 +18,9 @@ using LinearAlgebra
     @test ⬛ === nothing
     @test 🕵️(x->x==1, [1, 2, 1]) == [1, 3]
     @test_nowarn ☝️(👍)
-    @test ⛰️(IOBuffer("Brilliant"), Char) == 'B'
+    if VERSION >= v"1.5"
+        @test ⛰️(IOBuffer("Brilliant"), Char) == 'B'
+    end
 
     ## Arrays
     @test 😻([1], [2]; dims=1) == [1, 2]
