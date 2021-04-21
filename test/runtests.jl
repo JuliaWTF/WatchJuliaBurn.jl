@@ -32,7 +32,7 @@ using LinearAlgebra
     @test ➡️🐈([1], [2]) == [1 2]
     @test 🔢(I(2)) == Bool.([1 0; 0 1]) 
     @test 🧺(1:3) == [1, 2, 3]
-    if VERSION > 1.1
+    if VERSION > v"1.1"
         @test_nowarn 🪓🪓(rand(3, 3))
     end
     # @test_nowarn 🪟(rand(3, 3), 1:2, 1:2)
@@ -42,7 +42,7 @@ using LinearAlgebra
     @test 🍰 ≈ 3.1415 atol=1e-4
     @test ㅠ ≈ 3.1415 atol=1e-4
     @test 🧑🏻➡️🧑🏽(2.0) == tan(2.0)
-    if VERSION > 1.2
+    if VERSION > v"1.2"
         @test 🪵(1.0) == log(1.0)
     end
     @test 🗜️(5.0, 1.0, 2.0) == 2.0
