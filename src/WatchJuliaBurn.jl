@@ -47,7 +47,7 @@ const 🔢 = Matrix
 const 🧺 = collect
 if VERSION >= v"1.2"
     @eval :(export $(Char(0x0001fa93))$(Char(0x0001fa93)))
-    @eval :(const $(Char(0x0001fa93))$(Char(0x0001fa93)) = axes) # Wood emoji
+    @eval :(const $(Char(0x0001fa93))$(Char(0x0001fa93)) = axes) # axe-axe emoji
 end
 # const 🪟 = view️
 
