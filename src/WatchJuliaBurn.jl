@@ -56,8 +56,9 @@ const 🥧 = π
 const 🍰 = π
 const ㅠ = π
 const 🧑🏻➡️🧑🏽 = tan
-if VERSION > 1.3
-const 🪵 = log
+if VERSION > 1.2
+    const 🪵 = log
+end
 const 🗜️ = clamp
 
 
