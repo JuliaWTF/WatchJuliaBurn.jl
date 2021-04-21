@@ -5,6 +5,6 @@ Don't hesitates to add yours via PR.
 
 ## List of emojis
 
-| Emoji | Function |
+| Emoji | Function/Value |
 | --- | --- |
-| | |
+| c╯°□°ↄ╯ | `throw` |
