@@ -23,6 +23,7 @@ const 🔎 = findfirst
 const 🔍 = findlast
 const 🕵️ = findall
 const ☝️ = show
+const ⛰️ = peek
 
 ## Arrays
 const 😻 = cat
@@ -44,8 +45,8 @@ const 🥧 = π
 const 🍰 = π
 const ㅠ = π
 const 🧑🏻➡️🧑🏽 = tan
-
-
+const 🪵 = log
+const 🗜️ = clamp
 
 
 end
