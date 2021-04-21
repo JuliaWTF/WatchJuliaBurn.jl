@@ -2,5 +2,5 @@ using WatchJuliaBurn
 using Test
 
 @testset "WatchJuliaBurn.jl" begin
-    # Write your tests here.
+    @test_throws ArgumentError c╯°□°ↄ╯(ArgumentError("Great Success"))
 end

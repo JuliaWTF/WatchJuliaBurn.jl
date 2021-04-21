@@ -1,5 +1,7 @@
 module WatchJuliaBurn
 
-# Write your package code here.
+export c╯°□°ↄ╯
+
+const c╯°□°ↄ╯ = throw
 
 end
