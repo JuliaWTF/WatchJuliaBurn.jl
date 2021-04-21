@@ -16,7 +16,6 @@ Don't hesitates to add your worst creations via PR.
 |  👎 | `false` |
 | 🔥 | `delete!` |
 | 🖨️ | `print` |
-| ⚠ | `warn` |
 | ⬛  | `nothing` |
 | 🕵️ | `findall` |
 | ☝️ | `show` |

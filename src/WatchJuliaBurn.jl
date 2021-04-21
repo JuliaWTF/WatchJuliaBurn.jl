@@ -4,7 +4,7 @@ export c╯°□°ↄ╯
 export 🗺, 📖, 📡
 export ✅, 👍, 👌, 👎
 export @🥩_str
-export 🖨️, ⚠, ☝️, ⛰️
+export 🖨️, ☝️, ⛰️
 export 🔥
 export ⬛
 export 🕵️
@@ -25,7 +25,6 @@ const 👎 = false
 @eval $(Symbol("@🥩_str")) = $(getfield(Main, Symbol("@raw_str")))
 const 🔥 = delete!
 const 🖨️ = print
-const ⚠ = warn
 const ⬛  = nothing
 const 🕵️ = findall
 const ☝️ = show
