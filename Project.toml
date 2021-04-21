@@ -3,6 +3,9 @@ uuid = "952999c0-2bc0-44cb-b633-dc1e299b187b"
 authors = ["Theo Galy-Fajou <theo.galyfajou@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
 [compat]
 julia = "1"
 

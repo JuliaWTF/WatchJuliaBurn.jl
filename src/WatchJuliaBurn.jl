@@ -9,9 +9,12 @@ export 🔥
 export ⬛
 export 🕵️
 export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
-export 🔢, 🧺, 🪓🪓, 🪟
+export 🔢, 🧺, 🪓🪓
 export 🥧, 🍰, ㅠ
 export 🧑🏻➡️🧑🏽, 🪵, 🗜️
+
+using LinearAlgebra
+# import Base: view
 
 ## Base
 const c╯°□°ↄ╯ = throw
@@ -37,13 +40,13 @@ const ➡️😻 = hcat
 const 😹 = cat
 const ⬇️😹 = vcat
 const ➡️😹 = hcat
-const 🐈 = cat🧺
+const 🐈 = cat
 const ⬇️🐈 = vcat
 const ➡️🐈 = hcat
 const 🔢 = Matrix
 const 🧺 = collect
 const 🪓🪓 = axes
-const 🪟 = view️
+# const 🪟 = view️
 
 ## Math
 const 🥧 = π

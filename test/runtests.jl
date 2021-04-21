@@ -1,5 +1,6 @@
 using WatchJuliaBurn
 using Test
+using LinearAlgebra
 
 @testset "WatchJuliaBurn.jl" begin
     ## Base
@@ -14,11 +15,10 @@ using Test
     @test 🔥(📖(:a => 2.0, :b => 3.0), :a) == 📖(:b => 3.0)
     @test_nowarn 🖨️("Yes!")
     @test 📡(sin, 1:5) == sin.(1:5)
-    @test_warn ⚠("Oh no!")
     @test ⬛ === nothing
     @test 🕵️(x->x==1, [1, 2, 1]) == [1, 3]
     @test_nowarn ☝️(👍)
-    @test ⛰️(IOBuffer("Brilliant")) == 'B'
+    @test ⛰️(IOBuffer("Brilliant"), Char) == 'B'
 
     ## Arrays
     @test 😻([1], [2]; dims=1) == [1, 2]
@@ -33,7 +33,7 @@ using Test
     @test 🔢(I(2)) == Bool.([1 0; 0 1]) 
     @test 🧺(1:3) == [1, 2, 3]
     @test_nowarn 🪓🪓(rand(3, 3))
-    @test_nowarn 🪟(rand(3, 3), 1:2, 1:2)
+    # @test_nowarn 🪟(rand(3, 3), 1:2, 1:2)
 
     ## Math
     @test 🥧 ≈ 3.1415 atol=1e-4
