@@ -13,7 +13,7 @@ const ✅ = true
 const 👍 = true
 const 👌 = true
 const 👎 = false
-conts 🛑 = exit
+const 🛑 = exit
 
 ## Arrays
 const 😻 = cat
