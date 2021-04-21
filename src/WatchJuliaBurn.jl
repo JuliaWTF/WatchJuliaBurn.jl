@@ -46,7 +46,9 @@ const ⬇️🐈 = vcat
 const ➡️🐈 = hcat
 const 🔢 = Matrix
 const 🧺 = collect
-const 🪓🪓 = axes
+if VERSION > 1.1
+    const 🪓🪓 = axes
+end
 # const 🪟 = view️
 
 ## Math
@@ -54,6 +56,7 @@ const 🥧 = π
 const 🍰 = π
 const ㅠ = π
 const 🧑🏻➡️🧑🏽 = tan
+if VERSION > 1.3
 const 🪵 = log
 const 🗜️ = clamp
 
