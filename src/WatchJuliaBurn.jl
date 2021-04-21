@@ -1,14 +1,22 @@
 module WatchJuliaBurn
 
-export c╯°□°ↄ╯, 🗺, 📖
+export c╯°□°ↄ╯
+export 🗺, 📖, 📡
 export ✅, 👍, 👌, 👎
-export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
-export 🥧, 🍰, ㅠ
 export @🥩_str
+export 🖨️, ⚠, ☝️, ⛰️
+export 🔥
+export ⬛
+export 🕵️
+export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
+export 🔢, 🧺, 🪓🪓, 🪟
+export 🥧, 🍰, ㅠ
+export 🧑🏻➡️🧑🏽, 🪵, 🗜️
 
 ## Base
 const c╯°□°ↄ╯ = throw
 const 🗺 = map
+const 📡 = broadcast
 const 📖 = Dict
 const ✅ = true
 const 👍 = true
@@ -17,12 +25,8 @@ const 👎 = false
 @eval $(Symbol("@🥩_str")) = $(getfield(Main, Symbol("@raw_str")))
 const 🔥 = delete!
 const 🖨️ = print
-const 📡 = broadcast
 const ⚠ = warn
-const 🪓 = split
 const ⬛  = nothing
-const 🔎 = findfirst
-const 🔍 = findlast
 const 🕵️ = findall
 const ☝️ = show
 const ⛰️ = peek
@@ -34,7 +38,7 @@ const ➡️😻 = hcat
 const 😹 = cat
 const ⬇️😹 = vcat
 const ➡️😹 = hcat
-const 🐈 = cat
+const 🐈 = cat🧺
 const ⬇️🐈 = vcat
 const ➡️🐈 = hcat
 const 🔢 = Matrix
