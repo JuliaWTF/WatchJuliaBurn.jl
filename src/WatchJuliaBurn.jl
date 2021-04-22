@@ -38,8 +38,8 @@ if VERSION >= v"1.5"
     const ⛰️ = peek
 end
 if VERSION >= v"1.2"
-    @eval export $(Symbol('🌳' * Char(0x0001fa93))) 
-    @eval const $(Symbol('🌳' * Char(0x0001fa93))) = chop # 🌳🪓
+    @eval export $(Symbol(Char(0x0001f333) * Char(0x0001fa93)))
+    @eval const $(Symbol(Char(0x0001f333) * Char(0x0001fa93))) = chop # 🌳🪓
 end
 const 💬🚨 = ArgumentError
 const 🚪🚶 = join

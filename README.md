@@ -22,19 +22,19 @@ Don't hesitates to add your worst creations via PR.
 | ☝️ | `show` | |
 | ⛰️ | `peek` | 1.5 |
 | 🥩`"string"` | `raw"string"` | |
-| 💬🚨 | `ArgumentError`|
-| 🚪🚶 | `join` |
-| 🗂 ,📁 | `foldr` |
-| 🥇 | `first` |
-| 🔎🥇 | `findfirst`|
-| 🎰 | `rand` |
-| ⚰️ | `kill`| 
-| 🏃 | `run` | 
-| 🚰 | `fill`| 
-| 🛵🔧 | `mod` | 
-| ↔ | `inv` |
-|🔮 | `imag` |
-| 🎠 , 🔵 | `round` |
+| 💬🚨 | `ArgumentError`| |
+| 🚪🚶 | `join` | |
+| 🗂 ,📁 | `foldr` | |
+| 🥇 | `first` | |
+| 🔎🥇 | `findfirst`| |
+| 🎰 | `rand` | |
+| ⚰️ | `kill`| |
+| 🏃 | `run` | |
+| 🚰 | `fill`| |
+| 🛵🔧 | `mod` | | 
+| ↔ | `inv` | |
+|🔮 | `imag` | |
+| 🎠 , 🔵 | `round` | |
 
 ### Arrays and LinearAlgebra
 
@@ -53,7 +53,7 @@ Don't hesitates to add your worst creations via PR.
 | --- | --- | --- |
 | 🥧, 🍰, ㅠ | `π` | |
 | 🧑🏻➡️🧑🏽 | `tan` | |
-| 🪵 | `log` | 1.5 |
+| 🪵 | `log` | 1.5 | |
 | 🗜️ | `clamp` | |
 
 ## REPL
