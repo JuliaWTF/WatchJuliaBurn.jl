@@ -50,7 +50,7 @@ const func_to_emojis = Dict(
     :findall => (:(🕵️),), 
     :show => (:(☝️),),
     :peek => ((:(⛰️), 1.5),),
-    :chop => ((Symbol(Char(0x0001f333) * Char(0x0001fa93)), 1.2)), # 🌳🪓
+    :chop => ((Symbol(Char(0x0001f333) * Char(0x0001fa93)), 1.2),), # 🌳🪓
     :ArgumentError => (:(💬🚨),),
     :join => (:(🚪🚶),),
     :foldr => (:(🗂), :(📁),),
@@ -76,7 +76,8 @@ const func_to_emojis = Dict(
     :mod => (:(🛵🔧),),
     :inv => (:(↔),),
     :imag => (:(🔮),),
-    :round => (:(🎠), :(🔵),)
+    :round => (:(🎠), :(🔵),),
+    :time => (:(🕛),),
 )
 
 for func in keys(func_to_emojis)
