@@ -8,9 +8,9 @@ export 🖨️, ☝️
 export 🔥
 export ⬛
 export 🕵️
-export 💬🚨 ,🚪🚶 ,🗂 ,📁 ,🥇 ,🔎🥇 ,🔑 ,🗝 ,🎰 ,⚰️ ,🏃
+export 💬🚨, 🚪🚶, 🗂, 📁, 🥇, 🔎🥇, 🔑, 🗝, 🎰, ⚰️, 🏃
 export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
-export 🛵🔧, ↔,🔮 ,🎠 , 🔵
+export 🛵🔧, ↔, 🔮, 🎠, 🔵
 export 🔢, 🧺
 export 🥧, 🍰, ㅠ
 export 🧑🏻➡️🧑🏽, 🗜️
@@ -37,7 +37,10 @@ if VERSION >= v"1.5"
     export ⛰️ 
     const ⛰️ = peek
 end
-const 🌳🪓 = chop
+if VERSION >= v"1.2"
+    @eval export $(Symbol('🌳' * Char(0x0001fa93))) 
+    @eval const $(Symbol('🌳' * Char(0x0001fa93))) = chop # 🌳🪓
+end
 const 💬🚨 = ArgumentError
 const 🚪🚶 = join
 const 🗂 = foldr
@@ -68,7 +71,6 @@ if VERSION >= v"1.2"
     @eval const $(Symbol(Char(0x0001fa93) * Char(0x0001fa93))) = axes # 🪓🪓 
 end
 const 🚰 = fill
-# const 🪟 = view️
 
 ## Math
 const 🥧 = π
