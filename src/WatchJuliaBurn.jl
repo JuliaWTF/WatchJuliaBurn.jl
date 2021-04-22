@@ -2,6 +2,7 @@ module WatchJuliaBurn
 
 export @new_emoji
 export emojify
+using Base: print
 
 using LinearAlgebra
 const emoji_to_func = Dict{Any, Any}()

@@ -4,7 +4,7 @@
 Go recursively over all the files contained in path and replace
 all possible occurence of functions with random emoji aliases
 """
-function emojify(path::String; overwrite=true)
+function emojify(path::String; overwrite=👌)
     if isdir(path)
         for subpath in readdir(path)
             emojify(joinpath(path, subpath); overwrite=overwrite)
@@ -12,17 +12,17 @@ function emojify(path::String; overwrite=true)
     elseif isfile(path) && endswith(path, ".jl")
         return emojify_file(path; overwrite=overwrite)
     end
-    return nothing
+    return ⬛
 end
 
-function emojify_file(filepath::String; overwrite=true)
+function emojify_file(filepath::String; overwrite=👍)
     str = String(read(filepath))
     for func in 🔑(func_to_emojis)
         str = replace(str, Regex("\\b" * string(func) * "\\b") => RandString(string.(func_to_emojis[func])))
     end
     if overwrite
         write(filepath, str)
-        return nothing
+        return ⬛
     else
         return str
     end
@@ -33,6 +33,6 @@ struct RandString{TS}
     strings::TS
 end
 
-function Base.🖨️(io::IO, rs::RandString)
+function 🖨️(io::IO, rs::RandString)
     🖨️(io, 🎲(rs.strings))
 end
