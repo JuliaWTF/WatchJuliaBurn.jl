@@ -1,60 +1,49 @@
 # WatchJuliaBurn
 
 WatchJuliaBurn aims at destroying the look of your code by adding emojis like :smile: and kaomojis like c╯°□°ↄ╯ instead of your favorites Julia functions.
-Don't hesitates to add your worst creations via PR.
+Don't hesitate to add your worst creations via PR.
 
 ## List of emojis
 
-### Base functions
 | Emoji | Function/Value | Min. Julia |
 | --- | --- | --- | 
-| c╯°□°ↄ╯ | `throw` | |
-| 🗺 | `map` | | 
+| 💬🚨 | `ArgumentError`| |
+| 🪓🪓 | `axes` | 1.2 |
 | 📡 | `broadcast` | |
-| 📖 | `Dict` | |
-| 🔑 ,🗝 | `keys`|
-|  ✅, 👍, 👌 | `true` | |
-|  👎 | `false` | |
+| 😻, 😹, 🐈 | `cat` | |
+| 🗜️ | `clamp` | |
+| 🧺 | `collect` | |
 | 🔥 | `delete!` | |
+| 📖 | `Dict` | |
+|  👎 | `false` | |
+| 🚰 | `fill`| |
+| 🕵️ | `findall` | |
+| 🔎🥇 | `findfirst`| |
+| 🥇 | `first` | |
+| 🗂 ,📁 | `foldr` | |
+| ➡️😻, ➡️😹, ➡️🐈 | `hcat` | |
+| 🔮 | `imag` | |
+| ↔ | `inv` | |
+| 🚪🚶 | `join` | |
+| 🔑 ,🗝 | `keys`|
+| ⚰️ | `kill`| |
+| 🪵 | `log` | 1.5 | |
+| 🗺 | `map` | | 
+| 🔢 | `Matrix` | |
+| 🛵🔧 | `mod` | | 
+| ⛰️ | `peek` | 1.5 |
+| 🥧, 🍰, ㅠ | `pi`, `π` | |
 | 🖨️ | `print` | |
 | ⬛  | `nothing` | |
-| 🕵️ | `findall` | |
-| ☝️ | `show` | |
-| ⛰️ | `peek` | 1.5 |
-| 🥩`"string"` | `raw"string"` | |
-| 💬🚨 | `ArgumentError`| |
-| 🚪🚶 | `join` | |
-| 🗂 ,📁 | `foldr` | |
-| 🥇 | `first` | |
-| 🔎🥇 | `findfirst`| |
 | 🎰 | `rand` | |
-| ⚰️ | `kill`| |
-| 🏃 | `run` | |
-| 🚰 | `fill`| |
-| 🛵🔧 | `mod` | | 
-| ↔ | `inv` | |
-|🔮 | `imag` | |
 | 🎠 , 🔵 | `round` | |
-
-### Arrays and LinearAlgebra
-
-| Emoji | Function/Value | Min. Julia |
-| --- | --- | -- |
-| 😻, 😹, 🐈 | `cat` | |
-| ⬇️😻, ⬇️😹, ⬇️🐈 | `vcat` | |
-| ➡️😻, ➡️😹, ➡️🐈 | `hcat` | |
-| 🔢 | `Matrix` | |
-| 🧺 | `collect` | |
-| 🪓🪓 | `axes` | 1.2 |
-
-### Maths
-
-| Emoji | Function/Value | Min. Julia |
-| --- | --- | --- |
-| 🥧, 🍰, ㅠ | `π` | |
+| 🏃 | `run` | |
+| ☝️ | `show` | |
+| 🥩`"string"` | `raw"string"` | |
 | 🧑🏻➡️🧑🏽 | `tan` | |
-| 🪵 | `log` | 1.5 | |
-| 🗜️ | `clamp` | |
+| c╯°□°ↄ╯ | `throw` | |
+|  ✅, 👍, 👌 | `true` | |
+| ⬇️😻, ⬇️😹, ⬇️🐈 | `vcat` | |
 
 ## REPL
 
