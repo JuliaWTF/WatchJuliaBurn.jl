@@ -1,5 +1,6 @@
 using Latexify
 using WatchJuliaBurn
+
 ord_keys = sort(collect(WatchJuliaBurn.func_to_emojis), by=x->string(x[1]))
 function to_string(emojis)
     join([emoji isa Tuple ? string(emoji[1]) : string(emoji) for emoji in emojis], ", ")
@@ -13,9 +14,8 @@ function to_version(emojis)
     end
 end
 
-ar = reduce(vcat, begin
-    ['`' * string(key) *'`' to_string(emojis) to_version(emojis)]
-end for (key, emojis) in ord_keys)
+ar = reduce(vcat, ['`' * string(key) * '`' to_string(emojis) to_version(emojis)]
+    for (key, emojis) in ord_keys)
 ar = vcat(["Function" "Emojis" "Julia Version"], ar)
 
 md_ar = md(ar; latex=false)

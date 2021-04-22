@@ -69,7 +69,8 @@ const func_to_emojis = Dict(
     :mod => (:(🛵🔧),),
     :inv => (:(↔),),
     :imag => (:(🔮),),
-    :round => (:(🎠), :(🔵),)
+    :round => (:(🎠), :(🔵),),
+    :time => (:(🕛),),
 )
 
 for func in keys(func_to_emojis)
