@@ -79,6 +79,7 @@ end
 
 ## Additional features (does not pass with @new_emoji)
 @eval $(Symbol("@🥩_str")) = $(getfield(Main, Symbol("@raw_str")))
+export @🥩_str
 func_to_emojis[:(raw"")] = (:(🥩""),)
 emoji_to_func[:(🥩"")] = (:(raw""), "")
 
