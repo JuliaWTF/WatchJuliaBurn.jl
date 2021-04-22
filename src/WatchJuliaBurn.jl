@@ -15,8 +15,30 @@ export 🔢, 🧺
 export 🥧, 🍰, ㅠ
 export 🧑🏻➡️🧑🏽, 🗜️
 
+export @new_emoji
+
 using LinearAlgebra
-using EmojiSymbols
+const emoji_list = Dict{Any, Any}()
+
+macro new_emoji(emoji, func)
+    emoji_list[emoji] = (func, "")
+    return esc(quote
+        export $emoji
+        const $emoji = $(func);
+    end)
+end
+
+macro new_emoji(emoji, func, julia_version)
+    julia_version = string(julia_version)
+    emoji_list[emoji] = (func, julia_version)
+    return esc(quote
+        if VERSION >= @v_str $(julia_version)
+            @eval export $(Symbol(emoji))
+            @eval const $(Symbol(emoji)) = $(func)
+        end
+    end)
+end
+
 
 ## Base
 const c╯°□°ↄ╯ = throw
