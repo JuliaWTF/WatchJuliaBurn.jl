@@ -1,6 +1,8 @@
 module WatchJuliaBurn
 
 export @new_emoji
+export emojify
+using Base: print
 
 using LinearAlgebra
 const emoji_to_func = Dict{Any, Any}()
@@ -55,7 +57,7 @@ const func_to_emojis = Dict(
     :first => (:(🥇),),
     :findfirst => (:(🔎🥇),),
     :keys => (:(🔑), :(🗝),),
-    :rand => (:(🎰),),
+    :rand => (:(🎰),:(🎲)),
     :kill => (:(⚰️),),
     :run => (:(🏃),),
     ## Arrays
@@ -90,7 +92,9 @@ end
 ## Additional features (does not pass with @new_emoji)
 @eval $(Symbol("@🥩_str")) = $(getfield(Main, Symbol("@raw_str")))
 export @🥩_str
-func_to_emojis[:(raw"")] = (:(🥩""),)
+func_to_emojis[:(raw)] = (:(🥩),)
 emoji_to_func[:(🥩"")] = (:(raw""), "")
+
+include("emojify.jl")
 
 end
