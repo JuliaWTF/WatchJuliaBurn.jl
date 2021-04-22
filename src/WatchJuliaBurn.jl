@@ -8,7 +8,9 @@ export 🖨️, ☝️
 export 🔥
 export ⬛
 export 🕵️
+export 💬🚨, 🚪🚶, 🗂, 📁, 🥇, 🔎🥇, 🔑, 🗝, 🎰, ⚰️, 🏃
 export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
+export 🛵🔧, ↔, 🔮, 🎠, 🔵
 export 🔢, 🧺
 export 🥧, 🍰, ㅠ
 export 🧑🏻➡️🧑🏽, 🗜️
@@ -35,6 +37,22 @@ if VERSION >= v"1.5"
     export ⛰️ 
     const ⛰️ = peek
 end
+if VERSION >= v"1.2"
+    @eval export $(Symbol(Char(0x0001f333) * Char(0x0001fa93)))
+    @eval const $(Symbol(Char(0x0001f333) * Char(0x0001fa93))) = chop # 🌳🪓
+end
+const 💬🚨 = ArgumentError
+const 🚪🚶 = join
+const 🗂 = foldr
+const 📁 = foldr
+const 🥇 = first
+const 🔎🥇 = findfirst
+const 🔑 = keys
+const 🗝 = keys
+const 🎰 = rand
+const ⚰️ = kill
+const 🏃 = run
+
 
 ## Arrays
 const 😻 = cat
@@ -52,7 +70,7 @@ if VERSION >= v"1.2"
     @eval export $(Symbol(Char(0x0001fa93) * Char(0x0001fa93)))
     @eval const $(Symbol(Char(0x0001fa93) * Char(0x0001fa93))) = axes # 🪓🪓 
 end
-# const 🪟 = view️
+const 🚰 = fill
 
 ## Math
 const 🥧 = π
@@ -64,6 +82,10 @@ if VERSION >= v"1.5"
     @eval const $(Symbol(Char(0x0001fab5))) = log # 🪵
 end
 const 🗜️ = clamp
-
+const 🛵🔧 = mod
+const ↔ = inv
+const 🔮 = imag
+const 🎠 = round
+const 🔵 = round
 
 end

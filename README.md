@@ -12,6 +12,7 @@ Don't hesitates to add your worst creations via PR.
 | 🗺 | `map` | | 
 | 📡 | `broadcast` | |
 | 📖 | `Dict` | |
+| 🔑 ,🗝 | `keys`|
 |  ✅, 👍, 👌 | `true` | |
 |  👎 | `false` | |
 | 🔥 | `delete!` | |
@@ -21,6 +22,19 @@ Don't hesitates to add your worst creations via PR.
 | ☝️ | `show` | |
 | ⛰️ | `peek` | 1.5 |
 | 🥩`"string"` | `raw"string"` | |
+| 💬🚨 | `ArgumentError`| |
+| 🚪🚶 | `join` | |
+| 🗂 ,📁 | `foldr` | |
+| 🥇 | `first` | |
+| 🔎🥇 | `findfirst`| |
+| 🎰 | `rand` | |
+| ⚰️ | `kill`| |
+| 🏃 | `run` | |
+| 🚰 | `fill`| |
+| 🛵🔧 | `mod` | | 
+| ↔ | `inv` | |
+|🔮 | `imag` | |
+| 🎠 , 🔵 | `round` | |
 
 ### Arrays and LinearAlgebra
 
@@ -39,9 +53,10 @@ Don't hesitates to add your worst creations via PR.
 | --- | --- | --- |
 | 🥧, 🍰, ㅠ | `π` | |
 | 🧑🏻➡️🧑🏽 | `tan` | |
-| 🪵 | `log` | 1.5 |
+| 🪵 | `log` | 1.5 | |
 | 🗜️ | `clamp` | |
 
 ## REPL
 
 You can use the [EmojiSymbols.jl](https://github.com/wookay/EmojiSymbols.jl) package to super-turbo-charge your REPL experience!
+
