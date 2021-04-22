@@ -1,0 +1,20 @@
+name: Adapt README
+
+on:
+  pull_request:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: julia-actions/setup-julia@latest
+        with:
+          version: 1
+      - run: |
+          julia  -e 'using Pkg; Pkg.add([".", "Latexify"])'
+          julia  -e 'include("src/create_README.jl")'
+      - uses: reviewdog/action-suggester@v1
+        with:
+          tool_name: README_Adapt
+          fail_on_error: true
