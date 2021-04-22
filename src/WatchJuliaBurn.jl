@@ -1,20 +1,5 @@
 module WatchJuliaBurn
 
-export c╯°□°ↄ╯
-export 🗺, 📖, 📡
-export ✅, 👍, 👌, 👎
-export @🥩_str
-export 🖨️, ☝️
-export 🔥
-export ⬛
-export 🕵️
-export 💬🚨, 🚪🚶, 🗂, 📁, 🥇, 🔎🥇, 🔑, 🗝, 🎰, ⚰️, 🏃
-export 😻, ⬇️😻, ➡️😻, 😹, ⬇️😹, ➡️😹, 🐈, ⬇️🐈, ➡️🐈
-export 🛵🔧, ↔, 🔮, 🎠, 🔵
-export 🔢, 🧺
-export 🥧, 🍰, ㅠ
-export 🧑🏻➡️🧑🏽, 🗜️
-
 export @new_emoji
 
 using LinearAlgebra
