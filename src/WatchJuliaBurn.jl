@@ -24,6 +24,9 @@ macro new_emoji(emoji, func, julia_version)
     end)
 end
 
+## Contains mapping from functions to func_to_emojis
+## Each function (treated as a Symbol) maps to a Tuple of Symbols and Tuple{Symbol,Float64} for 
+## emojis needing a specific version
 const func_to_emojis = Dict(
     ## Base
     :throw => (:(c╯°□°ↄ╯),),
