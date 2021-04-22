@@ -41,3 +41,7 @@ Don't hesitates to add your worst creations via PR.
 | 🧑🏻➡️🧑🏽 | `tan` | |
 | 🪵 | `log` | 1.5 |
 | 🗜️ | `clamp` | |
+
+## REPL
+
+You can use the [EmojiSymbols.jl](https://github.com/wookay/EmojiSymbols.jl) package to super-turbo-charge your REPL experience!
