@@ -5,6 +5,13 @@ export @new_emoji
 using LinearAlgebra
 const emoji_to_func = Dict{Any, Any}()
 
+"""
+    @new_emoji emoji function [min_julia version]
+
+Creates an alias for an emoji to a function and eventually adds
+a minimum julia version to be run. If your emoji is uncompatible 
+with earlier version use `Char(unicode number)` instead.
+"""
 macro new_emoji(emoji, func)
     emoji_to_func[emoji] = (func, "")
     return esc(quote
