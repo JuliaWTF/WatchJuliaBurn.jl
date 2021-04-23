@@ -48,4 +48,7 @@ using LinearAlgebra
         @eval @test $(Symbol(Char(0x0001fab5)))(1.0) == log(1.0) # 🪵
     end
     @test 🗜️(5.0, 1.0, 2.0) == 2.0
+
+    ## Monkey try/catch/finally
+    include("monkeytests.jl")
 end
