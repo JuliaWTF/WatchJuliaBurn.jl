@@ -23,6 +23,7 @@ Don't hesitate to add your worst creations via PR.
 |    `count_ones` |       🧮1️⃣1️⃣ |               |
 |   `count_zeros` |       🧮0️⃣0️⃣ |               |
 |       `delete!` |             🔥 |               |
+|         `error` |             💣 |               |
 |         `false` |             👎 |               |
 |          `fill` |             🚰 |               |
 |       `findall` |            🕵️ |               |
@@ -57,6 +58,20 @@ Don't hesitate to add your worst creations via PR.
 |          `true` |       ✅, 👍, 👌 |               |
 |          `vcat` | ⬇️😻, ⬇️😹, ⬇️🐈 |               |
 |           `zip` |             🤐 |               |
+## Control Flow
+You can now replace boring old try/catch/finally clauses with fancy monkey flow!
+```julia
+@🐒 begin
+    🙈
+    	💣()
+    🙊(💥)
+    	😥(💥)
+    🙉
+    	🍌()
+    end
+```
+Parsing may behave weird when there are infix operators around the block. Try enclosing everything with parenthesis like `@🐒(begin ... end)` if that happens.
+
 ## REPL
 
 You can use the [EmojiSymbols.jl](https://github.com/wookay/EmojiSymbols.jl) package to super-turbo-charge your REPL experience!
