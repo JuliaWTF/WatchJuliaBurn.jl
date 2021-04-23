@@ -15,5 +15,5 @@ jobs:
           julia  -e 'using Pkg; Pkg.add("Latexify"); Pkg.develop(path="."); include("src/create_README.jl")'
       - uses: reviewdog/action-suggester@v1
         with:
-          tool_name: README_Adapt
+          tool_name: AutoREADME
           fail_on_error: true
