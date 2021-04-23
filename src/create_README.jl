@@ -20,7 +20,8 @@ ar = vcat(["Function" "Emojis" "Julia Version"], ar)
 
 md_ar = md(ar; latex=false)
 
-intro = """# WatchJuliaBurn
+dots = "https://raw.githubusercontent.com/JuliaLang/julia/master/doc/src/assets/julia.ico"
+intro = """# ⌚<img src="$(dots)" height="26"/>🔥.jl
 
 WatchJuliaBurn aims at destroying the look of your code by adding emojis like :smile: and kaomojis like c╯°□°ↄ╯ instead of your favorites Julia functions.
 Don't hesitate to add your worst creations via PR.
