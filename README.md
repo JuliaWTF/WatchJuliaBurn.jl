@@ -14,6 +14,7 @@ Don't hesitate to add your worst creations via PR.
 |          `axes` |            🪓🪓 |           1.2 |
 |     `broadcast` |             📡 |               |
 |           `cat` |       😻, 😹, 🐈 |               |
+|            `cd` |             💿 |               |
 |          `chop` |            🌳🪓 |           1.2 |
 |         `clamp` |            🗜️ |               |
 |       `collect` |             🧺 |               |
@@ -51,10 +52,11 @@ Don't hesitate to add your worst creations via PR.
 |          `show` |            ☝️ |               |
 |          `sign` |          🪧, 🚏 |      1.5, 1.5 |
 |           `tan` |        🧑🏻➡️🧑🏽 |               |
-|         `throw` |       c╯°□°ↄ╯ |               |
+|         `throw` |    c╯°□°ↄ╯, 🤮 |               |
 |          `time` |             🕛 |               |
 |          `true` |       ✅, 👍, 👌 |               |
 |          `vcat` | ⬇️😻, ⬇️😹, ⬇️🐈 |               |
+|           `zip` |             🤐 |               |
 ## REPL
 
 You can use the [EmojiSymbols.jl](https://github.com/wookay/EmojiSymbols.jl) package to super-turbo-charge your REPL experience!

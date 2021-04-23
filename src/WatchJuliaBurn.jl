@@ -38,7 +38,7 @@ end
 ## emojis needing a specific version
 const func_to_emojis = Dict(
     ## Base
-    :throw => (:(c╯°□°ↄ╯),),
+    :throw => (:(c╯°□°ↄ╯), :(🤮),),
     :map => (:(🗺),),
     :broadcast => (:(📡),),
     :Dict => (:(📖),),
@@ -57,9 +57,11 @@ const func_to_emojis = Dict(
     :first => (:(🥇),),
     :findfirst => (:(🔎🥇),),
     :keys => (:(🔑), :(🗝),),
-    :rand => (:(🎰),:(🎲)),
+    :rand => (:(🎰),:(🎲),),
     :kill => (:(⚰️),),
     :run => (:(🏃),),
+    :cd => (:(💿),),
+    :zip => (:(🤐),),
     ## Arrays
     :cat => (:(😻), :(😹), :(🐈),),
     :vcat => (:(⬇️😻), :(⬇️😹), :(⬇️🐈),),
@@ -78,7 +80,7 @@ const func_to_emojis = Dict(
     :imag => (:(🔮),),
     :round => (:(🎠), :(🔵),),
     :time => (:(🕛),),
-    :cot => (:(🧥),:(🥼)),
+    :cot => (:(🧥), :(🥼)),
     :count => (:(🧮),),
     :count_ones => (:(🧮1️⃣1️⃣),),
     :count_zeros => (:(🧮0️⃣0️⃣),),
