@@ -16,5 +16,5 @@ jobs:
           git diff | echo
       - uses: reviewdog/action-suggester@v1
         with:
-          tool_name: README_Adapt
+          tool_name: AutoREADME
           fail_on_error: true
