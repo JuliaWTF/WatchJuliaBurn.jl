@@ -10,22 +10,30 @@ Don't hesitate to add your worst creations via PR.
 | `ArgumentError` |            💬🚨 |               |
 |          `Dict` |             📖 |               |
 |        `Matrix` |             🔢 |               |
+|           `abs` |        👔💪, 🎽💪 |               |
 |          `axes` |            🪓🪓 |           1.2 |
 |     `broadcast` |             📡 |               |
 |           `cat` |       😻, 😹, 🐈 |               |
 |          `chop` |            🌳🪓 |           1.2 |
 |         `clamp` |            🗜️ |               |
 |       `collect` |             🧺 |               |
+|           `cot` |          🧥, 🥼 |               |
+|         `count` |             🧮 |               |
+|    `count_ones` |       🧮1️⃣1️⃣ |               |
+|   `count_zeros` |       🧮0️⃣0️⃣ |               |
 |       `delete!` |             🔥 |               |
 |         `false` |             👎 |               |
 |          `fill` |             🚰 |               |
 |       `findall` |            🕵️ |               |
 |     `findfirst` |            🔎🥇 |               |
+|      `findnext` |            🔎⏭ |               |
 |         `first` |             🥇 |               |
+|         `float` |            ⛵️ |               |
 |         `foldr` |          🗂, 📁 |               |
 |          `hcat` | ➡️😻, ➡️😹, ➡️🐈 |               |
 |          `imag` |             🔮 |               |
 |           `inv` |             ↔ |               |
+|        `isreal` |            🛸❓ |               |
 |          `join` |            🚪🚶 |               |
 |          `keys` |          🔑, 🗝 |               |
 |          `kill` |            ⚰️ |               |
@@ -34,18 +42,19 @@ Don't hesitate to add your worst creations via PR.
 |           `mod` |            🛵🔧 |               |
 |       `nothing` |             ⬛ |               |
 |          `peek` |            ⛰️ |           1.5 |
+|            `pi` |          🥧, 🍰 |               |
 |         `print` |            🖨️ |               |
 |          `rand` |          🎰, 🎲 |               |
 |           `raw` |             🥩 |               |
 |         `round` |          🎠, 🔵 |               |
 |           `run` |             🏃 |               |
 |          `show` |            ☝️ |               |
+|          `sign` |          🪧, 🚏 |               |
 |           `tan` |        🧑🏻➡️🧑🏽 |               |
 |         `throw` |       c╯°□°ↄ╯ |               |
 |          `time` |             🕛 |               |
 |          `true` |       ✅, 👍, 👌 |               |
 |          `vcat` | ⬇️😻, ⬇️😹, ⬇️🐈 |               |
-|             `π` |       🥧, 🍰, ㅠ |               |
 ## REPL
 
 You can use the [EmojiSymbols.jl](https://github.com/wookay/EmojiSymbols.jl) package to super-turbo-charge your REPL experience!
