@@ -1,8 +1,8 @@
 name: Adapt README
 
 on:
-  pull_request:
-
+  push:
+    - master
 jobs:
   adapt_readme:
     runs-on: ubuntu-latest
