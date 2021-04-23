@@ -49,7 +49,7 @@ Don't hesitate to add your worst creations via PR.
 |         `round` |          🎠, 🔵 |               |
 |           `run` |             🏃 |               |
 |          `show` |            ☝️ |               |
-|          `sign` |          🪧, 🚏 |               |
+|          `sign` |          🪧, 🚏 |      1.5, 1.5 |
 |           `tan` |        🧑🏻➡️🧑🏽 |               |
 |         `throw` |       c╯°□°ↄ╯ |               |
 |          `time` |             🕛 |               |
