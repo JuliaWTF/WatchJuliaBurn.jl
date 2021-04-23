@@ -97,5 +97,6 @@ func_to_emojis[:(raw)] = (:(🥩),)
 emoji_to_func[:(🥩"")] = (:(raw""), "")
 
 include("emojify.jl")
+include("monkeycatch.jl")
 
 end
