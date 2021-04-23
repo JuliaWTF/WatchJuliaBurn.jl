@@ -2,7 +2,8 @@ name: Adapt README
 
 on:
   push:
-    - master
+      branches:
+        - master
 jobs:
   adapt_readme:
     runs-on: ubuntu-latest
