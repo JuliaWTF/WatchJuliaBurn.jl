@@ -60,6 +60,7 @@ const func_to_emojis = Dict(
     :rand => (:(🎰),:(🎲),),
     :kill => (:(⚰️),),
     :run => (:(🏃),),
+    :error => (:(💣),),
     :cd => (:(💿),),
     :zip => (:(🤐),),
     ## Arrays
@@ -108,5 +109,7 @@ func_to_emojis[:(raw)] = (:(🥩),)
 emoji_to_func[:(🥩"")] = (:(raw""), "")
 
 include("emojify.jl")
+include("monkeycatch.jl")
+export @🐒
 
 end

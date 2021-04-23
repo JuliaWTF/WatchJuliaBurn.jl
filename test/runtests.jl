@@ -51,4 +51,8 @@ using LinearAlgebra
     @test 🎽💪(-2) == 2
     @test 🛸❓(1im) == 👎
     @test 🔮(1 + 2im) == 2
+  
+    ## Monkey try/catch/finally
+    include("monkeytests.jl")
+  
 end
