@@ -43,6 +43,7 @@ You can now replace boring old try/catch/finally clauses with fancy monkey flow!
     	🍌()
     end
 ```
+Parsing may behave weird when there are infix operators around the block. Try enclosing everything with parenthesis like `@🐒(begin ... end)` if that happens.
 
 ## REPL
 
