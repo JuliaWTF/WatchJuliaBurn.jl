@@ -37,5 +37,5 @@ You can use the [EmojiSymbols.jl](https://github.com/wookay/EmojiSymbols.jl) pac
 """
 
 open(joinpath(@__DIR__, "..", "README.md")) do io
-    write(io, intro * string(md_ar) * outro))
+    write(io, intro * string(md_ar) * outro)
 end
