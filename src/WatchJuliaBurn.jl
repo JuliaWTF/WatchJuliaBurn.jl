@@ -1,10 +1,19 @@
 module WatchJuliaBurn
 
 export @new_emoji
+export emojify
+using Base: print
 
 using LinearAlgebra
 const emoji_to_func = Dict{Any, Any}()
 
+"""
+    @new_emoji emoji function [min_julia version]
+
+Creates an alias for an emoji to a function and eventually adds
+a minimum julia version to be run. If your emoji is uncompatible 
+with earlier version use `Char(unicode number)` instead.
+"""
 macro new_emoji(emoji, func)
     emoji_to_func[emoji] = (func, "")
     return esc(quote
@@ -41,7 +50,7 @@ const func_to_emojis = Dict(
     :findall => (:(🕵️),), 
     :show => (:(☝️),),
     :peek => ((:(⛰️), 1.5),),
-    :chop => ((Symbol(Char(0x0001f333) * Char(0x0001fa93)), 1.2)), # 🌳🪓
+    :chop => ((Symbol(Char(0x0001f333) * Char(0x0001fa93)), 1.2),), # 🌳🪓
     :ArgumentError => (:(💬🚨),),
     :join => (:(🚪🚶),),
     :foldr => (:(🗂), :(📁),),
@@ -53,7 +62,6 @@ const func_to_emojis = Dict(
     :run => (:(🏃),),
     :cd => (:(💿),),
     :zip => (:(🤐),),
-    :stop => (:(🛑),),
     ## Arrays
     :cat => (:(😻), :(😹), :(🐈),),
     :vcat => (:(⬇️😻), :(⬇️😹), :(⬇️🐈),),
@@ -70,7 +78,8 @@ const func_to_emojis = Dict(
     :mod => (:(🛵🔧),),
     :inv => (:(↔),),
     :imag => (:(🔮),),
-    :round => (:(🎠), :(🔵),)
+    :round => (:(🎠), :(🔵),),
+    :time => (:(🕛),),
 )
 
 for func in keys(func_to_emojis)
@@ -86,7 +95,9 @@ end
 ## Additional features (does not pass with @new_emoji)
 @eval $(Symbol("@🥩_str")) = $(getfield(Main, Symbol("@raw_str")))
 export @🥩_str
-func_to_emojis[:(raw"")] = (:(🥩""),)
+func_to_emojis[:(raw)] = (:(🥩),)
 emoji_to_func[:(🥩"")] = (:(raw""), "")
+
+include("emojify.jl")
 
 end
