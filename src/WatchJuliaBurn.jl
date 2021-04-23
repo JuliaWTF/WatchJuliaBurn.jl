@@ -85,7 +85,7 @@ const func_to_emojis = Dict(
     :findnext => ((:🔎⏭),),
     :isreal => ((:🛸❓),),
     :float => ((:⛵️),),
-    :sign => ((:🪧),(:🚏),),
+    :sign => ((Symbol(Char(0x0001faa7)), 1.5),(Symbol(Char(0x0001f68f)), 1.5),), # 🪧, 🚏
     :abs => ((:👔💪),(:🎽💪),),
 )
 
