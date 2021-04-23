@@ -1,9 +1,9 @@
 # plain try throws
-@test_throws ErrorException @🐒 begin
+@test_throws LoadError macroexpand(@__MODULE__, :(@🐒 begin
 🙈
     println("Should not have come this far.")
     42
-end
+end))
 # try...catch
 @test 42 == @🐒 begin
 🙈
