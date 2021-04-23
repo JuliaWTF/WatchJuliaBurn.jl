@@ -107,5 +107,6 @@ emoji_to_func[:(🥩"")] = (:(raw""), "")
 
 include("emojify.jl")
 include("monkeycatch.jl")
+export @🐒
 
 end
