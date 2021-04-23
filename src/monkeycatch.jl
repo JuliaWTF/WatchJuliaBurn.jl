@@ -79,7 +79,7 @@ macro 🐒(monkeyexpression::Expr)
 		error("Syntax: 🙈 without 🙊 or 🙉")
 	end
 	tryexpr = Expr(:try, tryblock, catchme, catchblock)
-	if !isnothing(finallyblock)
+	if !(finallyblock === nothing)
 		push!(tryexpr.args, finallyblock)
 	end
 	push!(newexpr.args, tryexpr)
