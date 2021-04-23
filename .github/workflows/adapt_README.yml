@@ -13,8 +13,12 @@ jobs:
           version: 1
       - run: |
           julia  -e 'using Pkg; Pkg.add("Latexify"); Pkg.develop(path="."); include("src/create_README.jl")'
-          echo $(git diff)
-      - uses: reviewdog/action-suggester@v1
-        with:
-          tool_name: AutoREADME
-          fail_on_error: true
+          echo $(git diff) 
+      - name: Apply README change
+        run: |
+          CHANGED="$(git diff --name-only)"
+          if [ ! -z $CHANGED ]; then
+            >&2 echo "README needs to be updated"
+            git commit -m "Update README" README.md 
+            exit 1
+          fi
