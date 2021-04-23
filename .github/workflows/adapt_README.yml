@@ -13,7 +13,9 @@ jobs:
           version: 1
       - run: |
           julia  -e 'using Pkg; Pkg.add("Latexify"); Pkg.develop(path="."); include("src/create_README.jl")'
-      - uses: reviewdog/action-suggester@v1
+          echo $(git diff) 
+      - uses: EndBug/add-and-commit@v7
         with:
-          tool_name: AutoREADME
-          fail_on_error: true
+          default_author: github_actions
+          message: "Update README"
+          add: README.md

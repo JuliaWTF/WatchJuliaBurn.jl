@@ -49,4 +49,6 @@ You can now replace boring old try/catch/finally clauses with fancy monkey flow!
 You can use the [EmojiSymbols.jl](https://github.com/wookay/EmojiSymbols.jl) package to super-turbo-charge your REPL experience!
 """
 
-write(joinpath(@__DIR__, "..", "README.md"), intro * string(md_ar) * outro)
+open(joinpath(@__DIR__, "..", "README.md"), "w") do io
+    write(io, intro * string(md_ar) * outro)
+end
