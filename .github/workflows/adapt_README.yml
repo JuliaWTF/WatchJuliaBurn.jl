@@ -14,11 +14,8 @@ jobs:
       - run: |
           julia  -e 'using Pkg; Pkg.add("Latexify"); Pkg.develop(path="."); include("src/create_README.jl")'
           echo $(git diff) 
-      - name: Apply README change
-        run: |
-          CHANGED="$(git diff --name-only)"
-          if [ ! -z $CHANGED ]; then
-            >&2 echo "README needs to be updated"
-            git commit -m "Update README" README.md 
-            exit 1
-          fi
+      - uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: "Update README"
+          add: README.md
