@@ -36,6 +36,6 @@ outro = """
 You can use the [EmojiSymbols.jl](https://github.com/wookay/EmojiSymbols.jl) package to super-turbo-charge your REPL experience!
 """
 
-open(joinpath(@__DIR__, "..", "README.md")) do io
+open(joinpath(@__DIR__, "..", "README.md"), "w") do io
     write(io, intro * string(md_ar) * outro)
 end
