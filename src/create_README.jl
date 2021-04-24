@@ -24,7 +24,17 @@ dots = "https://raw.githubusercontent.com/JuliaLang/julia/master/doc/src/assets/
 intro = """# ⌚<img src="$(dots)" height="26"/>🔥.jl
 
 WatchJuliaBurn aims at destroying the look of your code by adding emojis like :smile: and kaomojis like c╯°□°ↄ╯ instead of your favorites Julia functions.
-Don't hesitate to add your worst creations via PR.
+
+## Add your own awfulness!
+
+Don't hesitate to add your worst creations via PR. All you need to do is to add the function and emoji to the `func_to_emojis` internal `Dict`. Don't touch the `README`!
+It will be automatically generated after your PR is merged. Also tests are optional since tests are for losers!
+
+## Emojify your code
+
+You can use the `emojify` function to `emojify` recursively all the files of a given path. `emojify` will replace all functions for which an alias is known
+by the corresponding emoji (a random one is picked every time if multiple options are possible)
+
 
 ## List of emojis
 
