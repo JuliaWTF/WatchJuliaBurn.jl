@@ -38,7 +38,7 @@ end
 ## emojis needing a specific version
 const func_to_emojis = Dict(
     ## Base
-    :throw => (:(c╯°□°ↄ╯), :(🤮),),
+    :throw => (:(c╯°□°ↄ╯), :(🤮), :(🚮),),
     :map => (:(🗺),),
     :broadcast => (:(📡),),
     :Dict => (:(📖),),
@@ -69,12 +69,12 @@ const func_to_emojis = Dict(
     :hcat => (:(➡️😻), :(➡️😹), :(➡️🐈),),
     :Matrix => (:(🔢),),
     :collect => (:(🧺),),
-    :axes => ((Symbol(Char(0x0001fa93)^2), 1.2),), # 🪓🪓
+    :axes => ((Symbol(Char(0x1fa93)^2), 1.2),), # 🪓🪓
     :fill => (:(🚰),),
     ## Math
     :pi => (:(🥧), :(🍰),),
-    :tan => (:(🧑🏻➡️🧑🏽),),
-    :log => ((Symbol(Char(0x0001fab5)), 1.5),), # 🪵
+    :tan => (:(🧑🏻➡️🧑🏽), :(👩🏻➡️👩🏽),),
+    :log => ((Symbol(Char(0x1fab5)), 1.5),), # 🪵
     :clamp => (:(🗜️),),
     :mod => (:(🛵🔧),),
     :inv => (:(↔),),
@@ -88,8 +88,17 @@ const func_to_emojis = Dict(
     :findnext => ((:🔎⏭),),
     :isreal => ((:🛸❓),),
     :float => ((:⛵️),),
-    :sign => ((Symbol(Char(0x0001faa7)), 1.5),(Symbol(Char(0x0001f68f)), 1.5),), # 🪧, 🚏
+    :sign => ((Symbol(Char(0x1faa7)), 1.5),(Symbol(Char(0x1f68f)), 1.5),), # 🪧, 🚏
     :abs => ((:👔💪),(:🎽💪),),
+    :view => (:(👀), (:👁️),),
+    :write => (:(🖊️), :(✍️), :(🖋️),),
+    :Threads => (:(🧵),),
+    :time => (:(⏱️), :(⌛), :(⏲️),),
+    :string => (:(🎻),),
+    :download => (:(📥),),
+    :sleep => (:(😴), :(💤),),
+    :exit => (:(🚪),),
+    :pop! => (:(🍾), :(🏹🎈))
 )
 
 for func in keys(func_to_emojis)
