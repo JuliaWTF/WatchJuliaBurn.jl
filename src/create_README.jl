@@ -45,7 +45,7 @@ $(code_snippet)
 ```
 will return
 ```julia
-$(emojify_string(code_snippet))
+$(WatchJuliaBurn.emojify_string(code_snippet))
 ```
 
 ## List of emojis
