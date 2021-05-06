@@ -25,6 +25,8 @@ intro = """[![CI](https://github.com/theogf/WatchJuliaBurn.jl/actions/workflows/
 # ⌚<img src="$(dots)" height="26"/>🔥.jl
 
 WatchJuliaBurn aims at destroying the look of your code by adding emojis like :smile: and kaomojis like c╯°□°ↄ╯ instead of your favorite Julia functions.
+For a serious use of unicode characters see also [Ueauty.jl](https://gitlab.com/ExpandingMan/Ueauty.jl)
+
 
 ## Add your own awfulness!
 
