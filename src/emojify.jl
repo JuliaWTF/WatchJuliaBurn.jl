@@ -17,15 +17,20 @@ end
 
 function emojify_file(filepath::String; overwrite=👍)
     str = String(read(filepath))
-    for func in 🔑(func_to_emojis)
-        str = replace(str, Regex("\\b" * string(func) * "\\b") => RandString(string.(func_to_emojis[func])))
-    end
+    str = emojify_string(str)
     if overwrite
         write(filepath, str)
         return ⬛
     else
         return str
     end
+end
+
+function emojify_string(str::String)
+    for func in 🔑(func_to_emojis)
+        str = replace(str, Regex("\\b" * string(func) * "\\b") => RandString(string.(func_to_emojis[func])))
+    end
+    return str
 end
 
 ## Allow to get a random string every time it's printed
