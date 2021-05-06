@@ -14,7 +14,14 @@ It will be automatically generated after your PR is merged. Also tests are optio
 
 You can use the `emojify` function to recursively emojify all the files in a given path. `emojify` will replace all functions for which an alias is known
 by the corresponding emoji (a random one is picked every time if multiple options are possible).
-
+For example:
+```julia
+vcat(round(log(pi)), broadcast(tan ∘ inv, rand(3)))
+```
+will return
+```julia
+⬇️🐈(🎠((:🪵, 1.5)(🥧)), 📡(👩🏻➡️👩🏽 ∘ ↔, 🎲(3)))
+```
 
 ## List of emojis
 
