@@ -28,9 +28,17 @@ end
 
 function emojify_string(str::String)
     for func in 🔑(func_to_emojis)
-        str = replace(str, Regex("\\b" * string(func) * "\\b") => RandString(string.(func_to_emojis[func])))
+        str = replace(str, Regex("\\b" * string(func) * "\\b") => RandString(to_string.(func_to_emojis[func])))
     end
     return str
+end
+
+function to_string(emoji::Symbol)
+    string(emoji)
+end
+
+function to_string(emoji::Tuple)
+    return string(emoji[1])
 end
 
 ## Allow to get a random string every time it's printed
