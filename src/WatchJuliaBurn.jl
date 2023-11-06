@@ -98,7 +98,8 @@ const func_to_emojis = Dict(
     :download => (:(📥),),
     :sleep => (:(😴), :(💤),),
     :exit => (:(🚪),),
-    :pop! => (:(🍾), :(🏹🎈))
+    :pop! => (:(🍾), :(🏹🎈)),
+    :(mean ∘ skipmissing) => (:(😠),),
 )
 
 for func in keys(func_to_emojis)
@@ -116,9 +117,6 @@ end
 export @🥩_str
 func_to_emojis[:(raw)] = (:(🥩),)
 emoji_to_func[:(🥩"")] = (:(raw""), "")
-
-export 😠
-const 😠 = mean ∘ skipmissing
 
 include("emojify.jl")
 include("monkeycatch.jl")
