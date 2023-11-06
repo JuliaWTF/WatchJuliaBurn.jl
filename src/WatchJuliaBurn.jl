@@ -98,7 +98,8 @@ const func_to_emojis = Dict(
     :download => (:(📥),),
     :sleep => (:(😴), :(💤),),
     :exit => (:(🚪),),
-    :pop! => (:(🍾), :(🏹🎈))
+    :pop! => (:(🍾), :(🏹🎈)),
+    :(mean ∘ skipmissing) => (:(😠),),
 )
 
 for func in keys(func_to_emojis)
