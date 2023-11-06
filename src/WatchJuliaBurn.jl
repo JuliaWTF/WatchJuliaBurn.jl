@@ -117,6 +117,9 @@ export @🥩_str
 func_to_emojis[:(raw)] = (:(🥩),)
 emoji_to_func[:(🥩"")] = (:(raw""), "")
 
+export 😠
+const 😠 = mean ∘ skipmissing
+
 include("emojify.jl")
 include("monkeycatch.jl")
 export @🐒
