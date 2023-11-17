@@ -122,4 +122,30 @@ include("emojify.jl")
 include("monkeycatch.jl")
 export @🐒
 
+"""
+    arbitrary_pointer(page_size=0xfff)
+
+Returns a pointer to arbitrary memory owned by the Julia process.
+
+Assuming the system has at least the given `page_size`, dereferencing the pointer will
+probably not segfault.
+"""
+arbitrary_pointer(page_size=0xfff) = Ptr{Int}(Int(pointer(rand(4))) ⊻ rand(UInt32) & page_size)
+
+"""
+    🦶🔫(x)
+
+Check if a number is even but sometimes get the wrong answer and also corrupt arbitrary
+memory.
+"""
+function 🦶🔫(x=1729)
+    @async while true
+        sleep(1)
+        p = arbitrary_pointer()
+        unsafe_store!(p, unsafe_load(p)+1)
+    end
+    iseven(x) || x == 1729
+end
+export 🦶🔫
+
 end
