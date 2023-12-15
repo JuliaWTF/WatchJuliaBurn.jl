@@ -5,6 +5,7 @@ export emojify
 using Base: print
 
 using LinearAlgebra
+using Statistics
 const emoji_to_func = Dict{Any, Any}()
 
 """
@@ -27,8 +28,8 @@ macro new_emoji(emoji, func, julia_version)
     emoji_to_func[emoji] = (func, julia_version)
     return esc(quote
         if VERSION >= @v_str $(julia_version)
-            @eval export $(Symbol(emoji))
-            @eval const $(Symbol(emoji)) = $(func)
+            export $(Symbol(emoji))
+            const $(Symbol(emoji)) = $(func)
         end
     end)
 end
