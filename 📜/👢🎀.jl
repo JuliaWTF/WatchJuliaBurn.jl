@@ -84,5 +84,5 @@ end
 
 # Emojify all the src files of WatchJuliaBurn.
 foreach(walkdir(joinpath(pkgdir(WatchJuliaBurn), "src"))) do (root, dirs, files)
-    foreach(emojify, joinpath.(root, filter(!∋(["📖.jl", "WatchJuliaBurn.jl"]), files)))
+    foreach(emojify, joinpath.(root, filter(!∈(["📖.jl", "WatchJuliaBurn.jl"]), files)))
 end
