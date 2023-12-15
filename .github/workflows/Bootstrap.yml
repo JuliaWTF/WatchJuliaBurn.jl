@@ -1,0 +1,22 @@
+name: Adapt README
+
+on:
+  push:
+      branches:
+        - '🖐️'
+jobs:
+  adapt_readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: julia-actions/setup-julia@latest
+        with:
+          version: 1
+      - run: |
+          julia  -e 'using Pkg; Pkg.add("Latexify"); Pkg.develop(path="."); include("📜/👢🎀.jl")'
+          echo $(git diff) 
+      - uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: "Update README"
+          add: README.md
