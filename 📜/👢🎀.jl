@@ -18,7 +18,6 @@ end
 ar = reduce(vcat, ['`' * string(key) * '`' to_string(emojis) to_version(emojis)]
     for (key, emojis) in ord_keys)
 ar = vcat(["Function" "Emojis" "Julia Version"], ar)
-👢🎀
 md_ar = md(ar; latex=false)
 
 code_snippet = "vcat(round(log(pi)), broadcast(tan ∘ inv, rand(3)))"
