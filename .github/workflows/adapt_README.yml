@@ -3,7 +3,7 @@ name: Adapt README
 on:
   push:
       branches:
-        - main
+        - '🖐️'
 jobs:
   adapt_readme:
     runs-on: ubuntu-latest
