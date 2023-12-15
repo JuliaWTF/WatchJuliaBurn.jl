@@ -22,7 +22,7 @@ md_ar = md(ar; latex=false)
 
 code_snippet = "vcat(round(log(pi)), broadcast(tan ∘ inv, rand(3)))"
 
-dots = "https://raw.githubusercontent.com/JuliaLang/julia/master/doc/src/assets/julia.ico"
+dots = "https://raw.githubusercontent.com/JuliaLang/julia/main/doc/src/assets/julia.ico"
 intro = """[![CI](https://github.com/theogf/WatchJuliaBurn.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/theogf/WatchJuliaBurn.jl/actions/workflows/CI.yml)
 # ⌚<img src="$(dots)" height="26"/>🔥.jl
 
