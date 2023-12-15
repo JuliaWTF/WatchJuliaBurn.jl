@@ -1,9 +1,8 @@
 [![CI](https://github.com/theogf/WatchJuliaBurn.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/theogf/WatchJuliaBurn.jl/actions/workflows/CI.yml)
-# ⌚<img src="https://raw.githubusercontent.com/JuliaLang/julia/main/doc/src/assets/julia.ico" height="26"/>🔥.jl
+# ⌚<img src="https://raw.githubusercontent.com/JuliaLang/julia/🖐️/doc/src/assets/julia.ico" height="26"/>🔥.jl
 
 WatchJuliaBurn aims at destroying the look of your code by adding emojis like :smile: and kaomojis like c╯°□°ↄ╯ instead of your favorite Julia functions.
 For a serious use of unicode characters see also [Ueauty.jl](https://gitlab.com/ExpandingMan/Ueauty.jl)
-
 
 ## Add your own awfulness!
 
@@ -15,12 +14,15 @@ It will be automatically generated after your PR is merged. Also tests are optio
 You can use the `emojify` function to recursively emojify all the files in a given path. `emojify` will replace all functions for which an alias is known
 by the corresponding emoji (a random one is picked every time if multiple options are possible).
 For example:
+
 ```julia
 vcat(round(log(pi)), broadcast(tan ∘ inv, rand(3)))
 ```
+
 will return
+
 ```julia
-⬇️😹(🎠(🪵(🥧)), 📡(🧑🏻➡️🧑🏽 ∘ ↔, 🎲(3)))
+⬇️😻(🔵(🪵(🥧)), 📡(👩🏻➡️👩🏽 ∘ ↔, 🎰(3)))
 ```
 
 ## List of emojis
@@ -89,6 +91,7 @@ will return
 |                `zip` |              🤐 |               |
 ## Control Flow
 You can now replace boring old try/catch/finally clauses with fancy monkey flow!
+
 ```julia
 @🐒 begin
     🙈
@@ -99,6 +102,7 @@ You can now replace boring old try/catch/finally clauses with fancy monkey flow!
     	🍌()
     end
 ```
+
 Parsing may behave weird when there are infix operators around the block. Try enclosing everything with parenthesis like `@🐒(begin ... end)` if that happens.
 
 ## REPL
