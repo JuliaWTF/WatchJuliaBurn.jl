@@ -53,6 +53,6 @@ using LinearAlgebra
     @test 🔮(1 + 2im) == 2
   
     ## Monkey try/catch/finally
-    include("monkeytests.jl")
+    include("🐒tests.jl")
   
 end

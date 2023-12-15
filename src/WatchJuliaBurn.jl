@@ -1,12 +1,18 @@
 module WatchJuliaBurn
 
+export @🐒
+export @🥩_str
 export @new_emoji
 export emojify
 using Base: print
 
 using LinearAlgebra
 using Statistics
-const emoji_to_func = Dict{Any, Any}()
+
+# Needed for the first global constant.
+const 📖 = Dict
+
+const emoji_to_func = 📖{Any, Any}()
 
 """
     @new_emoji emoji function [min_julia version]
@@ -34,74 +40,7 @@ macro new_emoji(emoji, func, julia_version)
     end)
 end
 
-## Contains mapping from functions to func_to_emojis
-## Each function (treated as a Symbol) maps to a Tuple of Symbols and Tuple{Symbol,Float64} for
-## emojis needing a specific version
-const func_to_emojis = Dict(
-    ## Base
-    :throw => (:(c╯°□°ↄ╯), :(🤮), :(🚮),),
-    :map => (:(🗺),),
-    :broadcast => (:(📡),),
-    :Dict => (:(📖),),
-    :true => (:(✅), :(👍), :(👌),),
-    :false => (:👎,),
-    :delete! => (:(🔥),),
-    :print => (:(🖨️),),
-    :nothing => (:(⬛),),
-    :findall => (:(🕵️),),
-    :show => (:(☝️),),
-    :peek => ((:(⛰️), 1.5),),
-    :chop => ((Symbol(Char(0x0001f333) * Char(0x0001fa93)), 1.2),), # 🌳🪓
-    :ArgumentError => (:(💬🚨),),
-    :join => (:(🚪🚶),),
-    :foldr => (:(🗂), :(📁),),
-    :first => (:(🥇),),
-    :findfirst => (:(🔎🥇),),
-    :keys => (:(🔑), :(🗝),),
-    :rand => (:(🎰),:(🎲),),
-    :kill => (:(⚰️),),
-    :run => (:(🏃),),
-    :error => (:(💣),),
-    :cd => (:(💿),),
-    :zip => (:(🤐),),
-    ## Arrays
-    :cat => (:(😻), :(😹), :(🐈),),
-    :vcat => (:(⬇️😻), :(⬇️😹), :(⬇️🐈),),
-    :hcat => (:(➡️😻), :(➡️😹), :(➡️🐈),),
-    :Matrix => (:(🔢),),
-    :collect => (:(🧺),),
-    :axes => ((Symbol(Char(0x1fa93)^2), 1.2),), # 🪓🪓
-    :fill => (:(🚰),),
-    ## Math
-    :pi => (:(🥧), :(🍰),),
-    :tan => (:(🧑🏻➡️🧑🏽), :(👩🏻➡️👩🏽),),
-    :log => ((Symbol(Char(0x1fab5)), 1.5),), # 🪵
-    :clamp => (:(🗜️),),
-    :mod => (:(🛵🔧),),
-    :inv => (:(↔),),
-    :imag => (:(🔮),),
-    :round => (:(🎠), :(🔵),),
-    :time => (:(🕛),),
-    :cot => (:(🧥), :(🥼)),
-    :count => (:(🧮),),
-    :count_ones => (:(🧮1️⃣1️⃣),),
-    :count_zeros => (:(🧮0️⃣0️⃣),),
-    :findnext => ((:🔎⏭),),
-    :isreal => ((:🛸❓),),
-    :float => ((:⛵️),),
-    :sign => ((Symbol(Char(0x1faa7)), 1.5),(Symbol(Char(0x1f68f)), 1.5),), # 🪧, 🚏
-    :abs => ((:👔💪),(:🎽💪),),
-    :view => (:(👀), (:👁️),),
-    :write => (:(🖊️), :(✍️), :(🖋️),),
-    :Threads => (:(🧵),),
-    :time => (:(⏱️), :(⌛), :(⏲️),),
-    :string => (:(🎻),),
-    :download => (:(📥),),
-    :sleep => (:(😴), :(💤),),
-    :exit => (:(🚪),),
-    :pop! => (:(🍾), :(🏹🎈)),
-    :(mean ∘ skipmissing) => (:(😠),),
-)
+include("📖.jl")
 
 for func in keys(func_to_emojis)
     for symbol_info in func_to_emojis[func]
@@ -115,12 +54,10 @@ end
 
 ## Additional features (does not pass with @new_emoji)
 @eval $(Symbol("@🥩_str")) = $(getfield(Main, Symbol("@raw_str")))
-export @🥩_str
 func_to_emojis[:(raw)] = (:(🥩),)
 emoji_to_func[:(🥩"")] = (:(raw""), "")
 
-include("emojify.jl")
-include("monkeycatch.jl")
-export @🐒
+include("😃→🗿.jl")
+include("🙈🙊🙉.jl")
 
 end

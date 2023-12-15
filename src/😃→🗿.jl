@@ -19,7 +19,7 @@ function emojify_file(filepath::String; overwrite=👍)
     str = String(read(filepath))
     str = emojify_string(str)
     if overwrite
-        write(filepath, str)
+        🖊️(filepath, str)
         return ⬛
     else
         return str
@@ -28,20 +28,20 @@ end
 
 function emojify_string(str::String)
     for func in 🔑(func_to_emojis)
-        str = replace(str, Regex("\\b" * string(func) * "\\b") => RandString(to_string.(func_to_emojis[func])))
+        str = replace(str, Regex("\\b" * 🎻(func) * "\\b") => RandString(to_string.(func_to_emojis[func])))
     end
     return str
 end
 
 function to_string(emoji::Symbol)
-    string(emoji)
+    🎻(emoji)
 end
 
 function to_string(emoji::Tuple)
-    return string(emoji[1])
+    return 🎻(emoji[1])
 end
 
-## Allow to get a random string every time it's printed
+## Allow to get a random 🎻 every ⏲️ it's printed
 struct RandString{TS}
     strings::TS
 end
