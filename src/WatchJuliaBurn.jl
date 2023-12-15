@@ -12,7 +12,7 @@ using Statistics
 # Needed for the first global constant.
 const 📖 = Dict
 
-const emoji_to_func = Dict{Any, Any}()
+const emoji_to_func = 📖{Any, Any}()
 
 """
     @new_emoji emoji function [min_julia version]
