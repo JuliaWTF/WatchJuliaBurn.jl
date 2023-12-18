@@ -1,5 +1,5 @@
 [![CI](https://github.com/theogf/WatchJuliaBurn.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/theogf/WatchJuliaBurn.jl/actions/workflows/CI.yml)
-# ⌚<img src="https://raw.githubusercontent.com/JuliaLang/julia/🖐️/doc/src/assets/julia.ico" height="26"/>🔥.jl
+# ⌚<img src="https://raw.githubusercontent.com/JuliaLang/julia/master/doc/src/assets/julia.ico" height="26"/>🔥.jl
 
 WatchJuliaBurn aims at destroying the look of your code by adding emojis like :smile: and kaomojis like c╯°□°ↄ╯ instead of your favorite Julia functions.
 For a serious use of unicode characters see also [Ueauty.jl](https://gitlab.com/ExpandingMan/Ueauty.jl)
@@ -22,7 +22,7 @@ vcat(round(log(pi)), broadcast(tan ∘ inv, rand(3)))
 will return
 
 ```julia
-⬇️😻(🔵(🪵(🥧)), 📡(👩🏻➡️👩🏽 ∘ ↔, 🎰(3)))
+⬇️😻(🔵(🪵(🥧)), 📡(🧑🏻➡️🧑🏽 ∘ ↔, 🎲(3)))
 ```
 
 ## List of emojis

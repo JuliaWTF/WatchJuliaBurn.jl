@@ -1,4 +1,5 @@
 using WatchJuliaBurn
+using WatchJuliaBurn: arbitrary_pointer
 using Test
 using LinearAlgebra
 
@@ -53,8 +54,9 @@ using LinearAlgebra
     @test 🔮(1 + 2im) == 2
 
     ## Monkey try/catch/finally
-    include("monkeytests.jl")
-
+    include("🐒tests.jl")
+  
     # Arbitrary pointers don't segfault on read
     @test sum(unsafe_load(arbitrary_pointer()) for _ in 1:10_000_000) != 1729
+
 end

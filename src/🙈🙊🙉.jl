@@ -13,7 +13,7 @@ finally
 	baz()
 end
 ```
-you can now write the far more legible:
+you can now ✍️ the far more legible:
 ```julia
 💣 = foo
 😥 = bar
@@ -30,12 +30,12 @@ you can now write the far more legible:
 ```
 """
 macro 🐒(monkeyexpression::Expr)
-	monkeyexpression.head == :block || error("You have to wrap this in a begin...end block, sorry!")
+	monkeyexpression.head == :block || 💣("You have to wrap this in a begin...end block, sorry!")
 	newexpr = Expr(:block)
 	tryblock = Expr(:block)
-	catchme = false
-	catchblock = false
-	finallyblock = nothing
+	catchme = 👎
+	catchblock = 👎
+	finallyblock = ⬛
 	state = :start # where are we in the expression
 	for sub in monkeyexpression.args
 		if state == :start
@@ -44,7 +44,7 @@ macro 🐒(monkeyexpression::Expr)
 			elseif sub isa LineNumberNode
 				push!(newexpr.args, sub)
 			else
-				error("Missing 🙈")
+				💣("Missing 🙈")
 			end
 		elseif state == :try
 			if sub isa Symbol && sub == :🙊
@@ -56,7 +56,7 @@ macro 🐒(monkeyexpression::Expr)
 				if length(sub.args) == 2
 					catchme = sub.args[2]
 				else
-					error("Can only catch a single error at once, duh!")
+					💣("Can only catch a single 💣 at once, duh!")
 				end
 			elseif sub isa Symbol && sub == :🙉
 				state = :finally
@@ -76,10 +76,10 @@ macro 🐒(monkeyexpression::Expr)
 		end
 	end
 	if state == :try
-		error("Syntax: 🙈 without 🙊 or 🙉")
+		💣("Syntax: 🙈 without 🙊 or 🙉")
 	end
 	tryexpr = Expr(:try, tryblock, catchme, catchblock)
-	if !(finallyblock === nothing)
+	if !(finallyblock === ⬛)
 		push!(tryexpr.args, finallyblock)
 	end
 	push!(newexpr.args, tryexpr)

@@ -14,15 +14,15 @@ function to_version(emojis)
     end
 end
 
+
 ar = reduce(vcat, ['`' * string(key) * '`' to_string(emojis) to_version(emojis)]
     for (key, emojis) in ord_keys)
 ar = vcat(["Function" "Emojis" "Julia Version"], ar)
-
 md_ar = md(ar; latex=false)
 
 code_snippet = "vcat(round(log(pi)), broadcast(tan ∘ inv, rand(3)))"
 
-dots = "https://raw.githubusercontent.com/JuliaLang/julia/🖐️/doc/src/assets/julia.ico"
+dots = "https://raw.githubusercontent.com/JuliaLang/julia/master/doc/src/assets/julia.ico"
 intro = """[![CI](https://github.com/theogf/WatchJuliaBurn.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/theogf/WatchJuliaBurn.jl/actions/workflows/CI.yml)
 # ⌚<img src="$(dots)" height="26"/>🔥.jl
 
@@ -76,6 +76,12 @@ Parsing may behave weird when there are infix operators around the block. Try en
 You can use the [EmojiSymbols.jl](https://github.com/wookay/EmojiSymbols.jl) package to super-turbo-charge your REPL experience!
 """
 
+# Overwrite the README
 open(joinpath(@__DIR__, "..", "README.md"), "w") do io
     write(io, intro * string(md_ar) * outro)
+end
+
+# Emojify all the src files of WatchJuliaBurn.
+foreach(walkdir(joinpath(pkgdir(WatchJuliaBurn), "src"))) do (root, dirs, files)
+    foreach(emojify, joinpath.(root, filter(!∈(["📖.jl", "WatchJuliaBurn.jl"]), files)))
 end
