@@ -3,10 +3,12 @@
 ## emojis needing a specific version
 const func_to_emojis = 📖(
     ## Base
+    :ENV => (:(🧧),),
     :throw => (:(c╯°□°ↄ╯), :(🤮), :(🚮),),
     :map => (:(🗺),),
     :broadcast => (:(📡),),
     :Dict => (:(📖),),
+    :get => (:(🤲),),
     :true => (:(✅), :(👍), :(👌),),
     :false => (:👎,),
     :delete! => (:(🔥),),
@@ -15,7 +17,7 @@ const func_to_emojis = 📖(
     :findall => (:(🕵️),),
     :show => (:(☝️),),
     :peek => ((:(⛰️), 1.5),),
-    :chop => ((Symbol(Char(0x0001f333) * Char(0x0001fa93)), 1.2),), # 🌳🪓
+    :chop => (:(🥢), (Symbol(Char(0x0001f333) * Char(0x0001fa93)), 1.2),), # 🌳🪓
     :ArgumentError => (:(💬🚨),),
     :join => (:(🚪🚶),),
     :foldr => (:(🗂), :(📁),),
@@ -28,6 +30,7 @@ const func_to_emojis = 📖(
     :error => (:(💣),),
     :cd => (:(💿),),
     :zip => (:(🤐),),
+    :flush => (:(😳),),
     ## Arrays
     :cat => (:(😻), :(😹), :(🐈),),
     :vcat => (:(⬇️😻), :(⬇️😹), :(⬇️🐈),),
@@ -42,6 +45,7 @@ const func_to_emojis = 📖(
     :log => ((Symbol(Char(0x1fab5)), 1.5),), # 🪵
     :clamp => (:(🗜️),),
     :mod => (:(🛵🔧),),
+    :div => (:(🤿),),
     :inv => (:(↔),),
     :imag => (:(🔮),),
     :round => (:(🎠), :(🔵),),
