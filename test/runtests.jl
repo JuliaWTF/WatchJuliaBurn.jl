@@ -57,7 +57,7 @@ using LinearAlgebra
     strip_version(x::Union{Symbol, Expr}) = x
 
     # Check that symbols are not used twice.
-    @test Base.allunique(Iterators.flatmap(values(WatchJuliaBurn.😃📖)) do 😃😃😃
+    @test Base.allunique(mapreduce(vcat, values(WatchJuliaBurn.😃📖)) do 😃😃😃
         strip_version.(😃😃😃)
     end)
 
