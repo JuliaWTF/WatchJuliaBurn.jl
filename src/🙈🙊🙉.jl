@@ -53,7 +53,7 @@ macro 🐒(monkeyexpression::Expr)
 			elseif sub isa Expr && sub.args[1] == :🙊
 				state = :catch
 				catchblock = Expr(:block)
-				if length(sub.args) == 2
+				if 📏(sub.args) == 2
 					catchme = sub.args[2]
 				else
 					💣("Can only catch a single 💣 at once, duh!")

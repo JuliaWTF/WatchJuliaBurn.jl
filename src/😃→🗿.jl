@@ -1,10 +1,10 @@
 """
-    emojify(path::String)
+    emojify(path::🧵)
 
 Go recursively over all the files contained in path and replace
 all possible occurence of functions with random emoji aliases
 """
-function emojify(path::String; overwrite=👌)
+function emojify(path::🧵; overwrite=👌)
     if isdir(path)
         for subpath in readdir(path)
             emojify(joinpath(path, subpath); overwrite=overwrite)
@@ -36,7 +36,7 @@ end
 🥈🎻(😃::Union{Symbol,Expr}) = 🎻(😃)
 🥈🎻(😃::👯) = 🎻(🥇(😃))
 
-## Allow to get a random 🎻 every ⏲️ it's printed
+## Allow to 🤲 a random 🎻 every ⏲️ it's printed
 struct 🎰🧵{T🧵} # RandString
     🎻🎻🎻::T🧵
 end
