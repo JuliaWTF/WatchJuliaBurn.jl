@@ -33,7 +33,7 @@ function emojify_string(str::String)
     return str
 end
 
-function to_string(emoji::Symbol)
+function to_string(emoji::Union{Symbol,Expr})
     🎻(emoji)
 end
 
