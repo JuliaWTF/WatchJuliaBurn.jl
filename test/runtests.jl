@@ -53,9 +53,17 @@ using LinearAlgebra
     @test 🛸❓(1im) == 👎
     @test 🔮(1 + 2im) == 2
 
+    strip_version(x::Tuple) = first(x)
+    strip_version(x::Union{Symbol, Expr}) = x
+
+    # Check that symbols are not used twice.
+    @test Base.allunique(Iterators.flatmap(values(WatchJuliaBurn.😃📖)) do 😃😃😃
+        strip_version.(😃😃😃)
+    end)
+
     ## Monkey try/catch/finally
     include("🐒tests.jl")
-  
+
     # Arbitrary pointers don't segfault on read
     @test sum(unsafe_load(arbitrary_pointer()) for _ in 1:10_000_000) != 1729
 
