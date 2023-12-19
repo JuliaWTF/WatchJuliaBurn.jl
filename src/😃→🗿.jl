@@ -33,13 +33,11 @@ function emojify_string(str::String)
     return str
 end
 
-function to_string(emoji::Union{Symbol,Expr})
-    🎻(emoji)
+function 🥈🎻(😃::Union{Symbol,Expr})
+    🎻(😃)
 end
 
-function to_string(emoji::Tuple)
-    return 🎻(emoji[1])
-end
+🥈🎻(😃::👯) = 🎻(🥇(😃))
 
 ## Allow to get a random 🎻 every ⏲️ it's printed
 struct RandString{TS}
