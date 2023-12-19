@@ -4,12 +4,13 @@
 const 😃📖 = 📖(
     ## Base
     :ENV => (:(🧧),),
+    # Symbol(Char(0x1fae5))
     :ArgumentError => (:(💬🚨),),
-    :AbstractChar => (:(🫥🚗),),
-    :AbstractDict => (:(🫥📖),),
-    :AbstractDisplay => (:(🫥📺),),
-    :AbstractFloat => (:(🫥🛟),),
-    :AbstractString => (:(🫥🧵),),
+    :AbstractChar => ((Symbol(Char(0x1fae5) * '🚗'), 1.8),),
+    :AbstractDict => ((Symbol(Char(0x1fae5) * '📖'), 1.8),),
+    :AbstractDisplay => ((Symbol(Char(0x1fae5) * '📺'), 1.8),),
+    :AbstractFloat => ((Symbol(Char(0x1fae5) * '🛟'), 1.8),),
+    :AbstractString => ((Symbol(Char(0x1fae5) * '🧵'), 1.8),),
     :Bool => (:(👍👎),),
     :Char => (:(🚗),),
     :Dict => (:(📖),),
@@ -20,7 +21,7 @@ const 😃📖 = 📖(
     :any => (:(👩),), # (her name is Annie)
     :broadcast => (:(📡),),
     :cd => (:(💿), :(🇨🇩)),
-    :chop => (:(🥢), (Symbol(Char(0x0001f333) * Char(0x0001fa93)), 1.2),), # 🌳🪓
+    :chop => (:(🥢), (Symbol(Char(0x1f333) * Char(0x1fa93)), 1.2),), # 🌳🪓
     :delete! => (:(🔥),),
     :display => (:(📺),),
     :download => (:(📥),),
@@ -36,7 +37,6 @@ const 😃📖 = 📖(
     :foldr => (:(🗂), :(📁),),
     :get => (:(🤲),),
     :getfield => (:(🤲🌽), (:🤲🌾),),
-    :getglobal => (:(🤲🌍),),
     :getkey => (:(🤲🔑), :(🤲🗝),),
     :getproperty => (:(🤲🏡),),
     :join => (:(🚪🚶),),
@@ -59,7 +59,7 @@ const 😃📖 = 📖(
     :write => (:(🖊️), :(✍️), :(🖋️),),
     :zip => (:(🤐),),
     ## Arrays and iterators
-    :AbstractMatrix => (:(🫥🔢),),
+    :AbstractMatrix => ((Symbol(Char(0x1fae5)) * '🔢', 1.8),),
     :Matrix => (:(🔢),),
     :axes => ((Symbol(Char(0x1fa93)^2), 1.2),), # 🪓🪓
     :cat => (:(😻), :(😹), :(🐈),),
