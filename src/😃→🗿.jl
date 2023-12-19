@@ -15,8 +15,8 @@ function emojify(path::String; overwrite=👌)
     return ⬛
 end
 
-function emojify_file(filepath::🎻; overwrite=👍)
-    str = String(read(filepath))
+function emojify_file(filepath::🧵; overwrite=👍)
+    str = 🧵(read(filepath))
     str = emojify_string(str)
     if overwrite
         🖊️(filepath, str)
@@ -26,9 +26,9 @@ function emojify_file(filepath::🎻; overwrite=👍)
     end
 end
 
-function emojify_string(str::🎻)
+function emojify_string(str::🧵)
     for func in 🔑(😃📖)
-        str = replace(str, Regex("\\b" * 🎻(func) * "\\b") => 🎰🎻(to_string.(😃📖[func])))
+        str = replace(str, Regex("\\b" * 🎻(func) * "\\b") => 🎰🧵(🥈🎻.(😃📖[func])))
     end
     return str
 end
@@ -37,10 +37,8 @@ end
 🥈🎻(😃::👯) = 🎻(🥇(😃))
 
 ## Allow to get a random 🎻 every ⏲️ it's printed
-struct 🎰🎻{T🎻} # RandString
-    🎻🎻🎻::T🎻
+struct 🎰🧵{T🧵} # RandString
+    🎻🎻🎻::T🧵
 end
 
-function 🖨️(io::IO, rs::🎰🎻)
-    🖨️(io, 🎲(rs.🎻🎻🎻))
-end
+🖨️(io::👁️😲, rs::🎰🧵) = 🖨️(io, 🎲(rs.🎻🎻🎻))
