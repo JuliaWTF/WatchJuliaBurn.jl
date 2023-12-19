@@ -68,4 +68,5 @@ const func_to_emojis = 📖(
     :sign => ((Symbol(Char(0x1faa7)), 1.5),(Symbol(Char(0x1f68f)), 1.5),), # 🪧, 🚏
     :tan => (:(🧑🏻➡️🧑🏽), :(👩🏻➡️👩🏽),),
     :view => (:(👀), (:👁️),),
+    :push! => (:(🏋️‍♀️), :(🏋️), :(🏋️‍♂️)),
 )
