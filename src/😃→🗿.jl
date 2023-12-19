@@ -27,8 +27,8 @@ function emojify_file(filepath::String; overwrite=👍)
 end
 
 function emojify_string(str::String)
-    for func in 🔑(func_to_emojis)
-        str = replace(str, Regex("\\b" * 🎻(func) * "\\b") => RandString(to_string.(func_to_emojis[func])))
+    for func in 🔑(😃📖)
+        str = replace(str, Regex("\\b" * 🎻(func) * "\\b") => RandString(to_string.(😃📖[func])))
     end
     return str
 end

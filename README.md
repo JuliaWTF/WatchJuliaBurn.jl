@@ -6,7 +6,7 @@ For a serious use of unicode characters see also [Ueauty.jl](https://gitlab.com/
 
 ## Add your own awfulness!
 
-Don't hesitate to add your worst creations via PR. All you need to do is to add the function and emoji to the `func_to_emojis` internal `Dict`. Don't touch the `README`!
+Don't hesitate to add your worst creations via PR. All you need to do is to add the function and emoji to the `😃📖` internal `Dict`. Don't touch the `README`!
 It will be automatically generated after your PR is merged. Also tests are optional since tests are for losers!
 
 ## Emojify your code

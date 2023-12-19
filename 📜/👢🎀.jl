@@ -1,7 +1,7 @@
 using Latexify
 using WatchJuliaBurn
 
-ord_keys = sort(collect(WatchJuliaBurn.func_to_emojis), by=x->string(x[1]))
+ord_keys = sort(collect(WatchJuliaBurn.😃📖), by=x->string(x[1]))
 function to_string(emojis)
     join([emoji isa Tuple ? string(emoji[1]) : string(emoji) for emoji in emojis], ", ")
 end
@@ -31,7 +31,7 @@ For a serious use of unicode characters see also [Ueauty.jl](https://gitlab.com/
 
 ## Add your own awfulness!
 
-Don't hesitate to add your worst creations via PR. All you need to do is to add the function and emoji to the `func_to_emojis` internal `Dict`. Don't touch the `README`!
+Don't hesitate to add your worst creations via PR. All you need to do is to add the function and emoji to the `😃📖` internal `📖` in `src/📖.jl`. Don't touch the `README`!
 It will be automatically generated after your PR is merged. Also tests are optional since tests are for losers!
 
 ## Emojify your code
