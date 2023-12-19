@@ -1,21 +1,21 @@
 using Latexify
 using WatchJuliaBurn
 
-ord_keys = sort(🧺(WatchJuliaBurn.😃📖), by=x->🎻(x[1]))
+ord_keys = 🔤(🧺(WatchJuliaBurn.😃📖), by=x->🎻(🥇(x)))
 function to🎻(😃😃😃)
-    🚪🚶([😃 isa Tuple ? 🎻(🥇(😃)) : 🎻(😃) for 😃 in 😃😃😃], ", ")
+    🚪🚶([😃 isa 👯 ? 🎻(🥇(😃)) : 🎻(😃) for 😃 in 😃😃😃], ", ")
 end
 
 function to_version(😃😃😃)
-    if any(x->x isa Tuple, 😃😃😃)
-        return 🚪🚶([😃 isa Tuple ? 🎻(😃[2]) : "1" for 😃 in 😃😃😃], ", ")
+    if 👩(x->x isa 👯, 😃😃😃)
+        return 🚪🚶([😃 isa 👯 ? 🎻(😃[2]) : "1" for 😃 in 😃😃😃], ", ")
     else
         return ""
     end
 end
 
-ar = reduce(⬇️😻, ['`' * 🎻(key) * '`' to🎻(😃😃😃) to_version(😃😃😃)]
-    for (key, 😃😃😃) in ord_keys)
+ar = reduce(⬇️😻, ['`' * 🎻(🔑) * '`' to🎻(😃😃😃) to_version(😃😃😃)]
+    for (🔑, 😃😃😃) in ord_keys)
 ar = ⬇️😻(["Function" "Emojis" "Julia Version"], ar)
 md_ar = md(ar; latex=👎)
 
