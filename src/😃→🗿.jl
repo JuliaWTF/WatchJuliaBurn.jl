@@ -1,10 +1,10 @@
 """
-    emojify(path::String)
+    emojify(path::🧵)
 
 Go recursively over all the files contained in path and replace
 all possible occurence of functions with random emoji aliases
 """
-function emojify(path::String; overwrite=👌)
+function emojify(path::🧵; overwrite=👌)
     if isdir(path)
         for subpath in readdir(path)
             emojify(joinpath(path, subpath); overwrite=overwrite)
@@ -15,8 +15,8 @@ function emojify(path::String; overwrite=👌)
     return ⬛
 end
 
-function emojify_file(filepath::String; overwrite=👍)
-    str = String(read(filepath))
+function emojify_file(filepath::🧵; overwrite=👍)
+    str = 🧵(read(filepath))
     str = emojify_string(str)
     if overwrite
         🖊️(filepath, str)
@@ -26,26 +26,19 @@ function emojify_file(filepath::String; overwrite=👍)
     end
 end
 
-function emojify_string(str::String)
-    for func in 🔑(func_to_emojis)
-        str = replace(str, Regex("\\b" * 🎻(func) * "\\b") => RandString(to_string.(func_to_emojis[func])))
+function emojify_string(str::🧵)
+    for func in 🔑(😃📖)
+        str = replace(str, Regex("\\b" * 🎻(func) * "\\b") => 🎰🧵(🥈🎻.(😃📖[func])))
     end
     return str
 end
 
-function to_string(emoji::Symbol)
-    🎻(emoji)
+🥈🎻(😃::Union{Symbol,Expr}) = 🎻(😃)
+🥈🎻(😃::Tuple) = 🎻(🥇(😃))
+
+## Allow to 🤲 a random 🎻 every ⏲️ it's printed
+struct 🎰🧵{T🧵} # RandString
+    🎻🎻🎻::T🧵
 end
 
-function to_string(emoji::Tuple)
-    return 🎻(emoji[1])
-end
-
-## Allow to get a random 🎻 every ⏲️ it's printed
-struct RandString{TS}
-    strings::TS
-end
-
-function 🖨️(io::IO, rs::RandString)
-    🖨️(io, 🎲(rs.strings))
-end
+🖨️(io::👁️😲, rs::🎰🧵) = 🖨️(io, 🎲(rs.🎻🎻🎻))

@@ -42,8 +42,8 @@ end
 
 include("📖.jl")
 
-for func in keys(func_to_emojis)
-    for symbol_info in func_to_emojis[func]
+for func in keys(😃📖)
+    for symbol_info in 😃📖[func]
         if symbol_info isa Symbol
             @eval @new_emoji $(symbol_info) $(func)
         elseif symbol_info isa Tuple
@@ -54,7 +54,7 @@ end
 
 ## Additional features (does not pass with @new_emoji)
 @eval $(Symbol("@🥩_str")) = $(getfield(Main, Symbol("@raw_str")))
-func_to_emojis[:(raw)] = (:(🥩),)
+😃📖[:(raw)] = (:(🥩),)
 emoji_to_func[:(🥩"")] = (:(raw""), "")
 
 include("😃→🗿.jl")

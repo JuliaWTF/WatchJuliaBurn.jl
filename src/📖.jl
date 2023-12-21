@@ -1,17 +1,31 @@
-## Contains mapping from functions to func_to_emojis
+## Contains mapping from functions to 😃📖
 ## Each function (treated as a Symbol) maps to a Tuple of Symbols and Tuple{Symbol,Float64} for
 ## emojis needing a specific version
-const func_to_emojis = 📖(
+const 😃📖 = 📖(
     ## Base
     :ENV => (:(🧧),),
+    # Symbol(Char(0x1fae5))
     :ArgumentError => (:(💬🚨),),
+    :AbstractChar => ((Symbol(Char(0x1fae5) * '🚗'), 1.8),),
+    :AbstractDict => ((Symbol(Char(0x1fae5) * '📖'), 1.8),),
+    :AbstractDisplay => ((Symbol(Char(0x1fae5) * '📺'), 1.8),),
+    :AbstractFloat => ((Symbol(Char(0x1fae5) * Char(0x1f6df)), 1.8),),
+    :AbstractString => ((Symbol(Char(0x1fae5) * '🧵'), 1.8),),
+    :Bool => (:(👍👎),),
+    :Char => (:(🚗),),
     :Dict => (:(📖),),
-    :Threads => (:(🧵),),
+    :IO => ((Symbol(Char(0x1fa80) * '½'), 1.2), :(👁️😲),), # 🪀½
+    :Pair => (:(🍐),),
+    :Threads => ((Symbol(Char(0x1faa2)), 1.5),),
+    :String => (:(🧵),),
+    :any => (:(👩),), # (her name is Annie)
     :broadcast => (:(📡),),
-    :cd => (:(💿),),
-    :chop => (:(🥢), (Symbol(Char(0x0001f333) * Char(0x0001fa93)), 1.2),), # 🌳🪓
+    :cd => (:(💿), :(🇨🇩)),
+    :chop => (:(🥢), (Symbol(Char(0x1f333) * Char(0x1fa93)), 1.2),), # 🌳🪓
     :delete! => (:(🔥),),
+    :display => (:(📺),),
     :download => (:(📥),),
+    :dump => (:(💩),),
     :error => (:(💣),),
     :exit => (:(🚪),),
     :false => (:👎,),
@@ -22,32 +36,43 @@ const func_to_emojis = 📖(
     :flush => (:(😳),),
     :foldr => (:(🗂), :(📁),),
     :get => (:(🤲),),
+    :getfield => (:(🤲🌽), (:🤲🌾),),
+    :getkey => (:(🤲🔑), :(🤲🗝),),
+    :getproperty => (:(🤲🏡),),
     :join => (:(🚪🚶),),
     :keys => (:(🔑), :(🗝),),
     :kill => (:(⚰️),),
     :map => (:(🗺),),
     :nothing => (:(⬛),),
     :peek => ((:(⛰️), 1.5),),
-    :pop! => (:(🍾), :(🏹🎈)),
     :print => (:(🖨️),),
     :rand => (:(🎰),:(🎲),),
     :run => (:(🏃),),
+    :searchsorted => (:(🔎🔤),),
     :show => (:(☝️),),
     :sleep => (:(😴), :(💤),),
+    :sort => (:(🔤),),
     :string => (:(🎻),),
     :throw => (:(c╯°□°ↄ╯), :(🤮), :(🚮),),
     :time => (:(🕛), :(⏱️), :(⌛), :(⏲️),),
     :true => (:(✅), :(👍), :(👌),),
     :write => (:(🖊️), :(✍️), :(🖋️),),
     :zip => (:(🤐),),
-    ## Arrays
+    ## Arrays and iterators
+    :AbstractMatrix => ((Symbol(Char(0x1fae5) * '🔢'), 1.8),),
     :Matrix => (:(🔢),),
     :axes => ((Symbol(Char(0x1fa93)^2), 1.2),), # 🪓🪓
     :cat => (:(😻), :(😹), :(🐈),),
     :vcat => (:(⬇️😻), :(⬇️😹), :(⬇️🐈),),
     :hcat => (:(➡️😻), :(➡️😹), :(➡️🐈),),
     :collect => (:(🧺),),
+    :eachindex => (:(☝️☝️),),
     :fill => (:(🚰),),
+    :getindex => (:(🤲☝️),),
+    :push! => (:(🏋️),),
+    :pop! => (:(🍾), :(🏹🎈)),
+    :length => (:(📏),),
+    :view => (:(👀), :(👁️),),
     ## Math
     :abs => ((:👔💪),(:🎽💪),),
     :clamp => (:(🗜️),),
@@ -56,7 +81,8 @@ const func_to_emojis = 📖(
     :count_ones => (:(🧮1️⃣1️⃣),),
     :count_zeros => (:(🧮0️⃣0️⃣),),
     :div => (:(Symbol(Char(0x1f93f)), 1.2),), # 🤿
-    :float => ((:⛵️),),
+    :float => (:(⛵️), (Symbol(Char(0x1f6df)), 1.8),), # 🛟
+    :im => (:(🇮🇲),), # Island of Man flag
     :imag => (:(🔮),),
     :inv => (:(↔),),
     :isreal => ((:🛸❓),),
@@ -65,7 +91,8 @@ const func_to_emojis = 📖(
     :mod => (:(🛵🔧),),
     :pi => (:(🥧), :(🍰),),
     :round => (:(🎠), :(🔵),),
+    :secd => (:(🥈),),
     :sign => ((Symbol(Char(0x1faa7)), 1.5),(Symbol(Char(0x1f68f)), 1.5),), # 🪧, 🚏
     :tan => (:(🧑🏻➡️🧑🏽), :(👩🏻➡️👩🏽),),
-    :view => (:(👀), (:👁️),),
+    :tr => (:(🇹🇷),),
 )
