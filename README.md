@@ -22,28 +22,29 @@ vcat(round(log(pi)), broadcast(tan ∘ inv, rand(3)))
 will return
 
 ```julia
-⬇️😻(🎠(🪵(🍰)), 📡(🧑🏻➡️🧑🏽 ∘ ↔, 🎲(3)))
+⬇️😹(🎠(🪵(🥧)), 📡(👩🏻➡️👩🏽 ∘ ↔, 🎲(3)))
 ```
 
 ## List of emojis
 
 |             Function |                          Emojis | Julia Version |
 | --------------------:| -------------------------------:| -------------:|
-|       `AbstractChar` |                              🫥🚗 |               |
-|       `AbstractDict` |                              🫥📖 |               |
-|    `AbstractDisplay` |                              🫥📺 |               |
-|      `AbstractFloat` |                              🫥🛟 |               |
-|     `AbstractMatrix` |                              🫥🔢 |               |
-|     `AbstractString` |                              🫥🧵 |               |
+|       `AbstractChar` |                              🫥🚗 |           1.8 |
+|       `AbstractDict` |                              🫥📖 |           1.8 |
+|    `AbstractDisplay` |                              🫥📺 |           1.8 |
+|      `AbstractFloat` |                              🫥🛟 |           1.8 |
+|     `AbstractMatrix` |                              🫥🔢 |           1.8 |
+|     `AbstractString` |                              🫥🧵 |           1.8 |
 |      `ArgumentError` |                              💬🚨 |               |
 |               `Bool` |                              👍👎 |               |
 |               `Char` |                               🚗 |               |
 |               `Dict` |                               📖 |               |
 |                `ENV` |                               🧧 |               |
-|                 `IO` |                         🪀½, 👁️😲 |               |
+|                 `IO` |                         🪀½, 👁️😲 |        1.2, 1 |
 |             `Matrix` |                               🔢 |               |
+|               `Pair` |                               🍐 |               |
 |             `String` |                               🧵 |               |
-|            `Threads` |                               🪢 |               |
+|            `Threads` |                               🪢 |           1.5 |
 |                `abs` |                          👔💪, 🎽💪 |               |
 |                `any` |                               👩 |               |
 |               `axes` |                              🪓🪓 |           1.2 |
@@ -71,12 +72,11 @@ will return
 |          `findfirst` |                              🔎🥇 |               |
 |           `findnext` |                              🔎⏭ |               |
 |              `first` |                               🥇 |               |
-|              `float` |                           ⛵️, 🛟 |               |
+|              `float` |                           ⛵️, 🛟 |        1, 1.8 |
 |              `flush` |                               😳 |               |
 |              `foldr` |                            🗂, 📁 |               |
 |                `get` |                               🤲 |               |
 |           `getfield` |                          🤲🌽, 🤲🌾 |               |
-|          `getglobal` |                              🤲🌍 |               |
 |           `getindex` |                             🤲☝️ |               |
 |             `getkey` |                          🤲🔑, 🤲🗝 |               |
 |        `getproperty` |                              🤲🏡 |               |
