@@ -16,7 +16,6 @@ const 😃📖 = 📖(
     :Dict => (:(📖),),
     :IO => ((Symbol(Char(0x1fa80) * '½'), 1.2), :(👁️😲),), # 🪀½
     :Threads => ((Symbol(Char(0x1faa2)), 1.5),),
-    :Tuple => (:(👯),),
     :String => (:(🧵),),
     :any => (:(👩),), # (her name is Annie)
     :broadcast => (:(📡),),

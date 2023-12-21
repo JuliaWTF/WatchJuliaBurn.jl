@@ -34,7 +34,7 @@ function emojify_string(str::🧵)
 end
 
 🥈🎻(😃::Union{Symbol,Expr}) = 🎻(😃)
-🥈🎻(😃::👯) = 🎻(🥇(😃))
+🥈🎻(😃::Tuple) = 🎻(🥇(😃))
 
 ## Allow to 🤲 a random 🎻 every ⏲️ it's printed
 struct 🎰🧵{T🧵} # RandString
