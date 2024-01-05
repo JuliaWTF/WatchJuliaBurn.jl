@@ -37,7 +37,7 @@ end
 🥈🎻(😃::Tuple) = 🎻(🥇(😃))
 
 ## Allow to 🤲 a random 🎻 every ⏲️ it's printed
-struct 🎰🧵{T🧵} # RandString
+struct 🎰🧵{T🧵}
     🎻🎻🎻::T🧵
 end
 
